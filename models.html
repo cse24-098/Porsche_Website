@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Porsche Website</title> 
+</head>
+<body>
+   <header class="header">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Porsche Logo" class="logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <form class="search-bar" onsubmit="return handleSearch(event)">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="motorsports.html">Motorsports</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">More
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="generations.html">Generations</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="login.html">Login</a>
+            <a href="sign.html">Sign Up</a>
+        </div>
+    </nav>
+    
+    <main class="container py-5">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="model-section">
+            <h2 class="model-title">The Porsche 718</h2>
+            <a href="porsche_718.html">
+              <img src="https://images.finder.porsche.com/0f5a87d6-bc86-4db1-b6fc-c064322df067/960" alt="Porsche 718">
+            </a>
+            <p>The Porsche 718 is a lightweight, mid-engine sports car that delivers sharp handling and an agile driving experience. It's the perfect introduction to Porsche performance.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="model-section">
+            <h2 class="model-title">The Porsche 911</h2>
+            <a href="porsche_911.html">
+              <img src="https://i.pinimg.com/736x/ba/00/8e/ba008ebed9691d2e911366a388693bdb.jpg" alt="Porsche 911">
+            </a>
+            <p>The Porsche 911 is a true legend. Known for its iconic design and rear-engine layout, the 911 has evolved into one of the most refined performance cars in the world.</p>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="model-section">
+            <h2 class="model-title">The Porsche Taycan</h2>
+            <a href="porsche_taycan.html">
+              <img src="https://images.91wheels.com/assets/uploads/swatchs/Taycan_CarraraWhite1637741583.jpg?width=620?q=75" alt="Porsche Taycan">
+            </a>
+            <p>The Taycan is Porsche’s first fully electric sports car. With blistering acceleration and zero emissions, it redefines electric performance with Porsche’s signature driving dynamics.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="model-section">
+            <h2 class="model-title">The Porsche Panamera</h2>
+            <a href="porsche_panamera.html">
+              <img src="https://pixelz.cc/wp-content/uploads/2019/03/porsche-panamera-4-e-hybrid-wqhd-1440p-wallpaper.jpg" alt="Porsche Panamera">
+            </a>
+            <p>The Panamera blends luxury and power in a four-door coupe form. It offers the comfort of a sedan with the heart of a sports car, making it ideal for everyday performance driving.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="model-section">
+            <h2 class="model-title">The Porsche Macan</h2>
+            <a href="porsche_macan.html">
+              <img src="https://di-uploads-pod2.dealerinspire.com/waltersporsche/uploads/2018/07/Carrara-White-Metallic.jpeg" alt="Porsche Macan">
+            </a>
+            <p>The Macan is Porsche's compact SUV that doesn't compromise on sportiness. It’s versatile, powerful, and fun to drive — perfect for both city streets and open roads.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="model-section">
+            <h2 class="model-title">The Porsche Cayenne</h2>
+            <a href="porsche_cayenne.html">
+              <img src="https://img.gaadicdn.com/images/car-images/930x620/Porsche/Cayenne-Coupe/9931/1682515276637/222_white_ffffff.jpg" alt="Porsche Cayenne">
+            </a>
+            <p>The Cayenne is a bold, full-size luxury SUV with serious performance credentials. It combines power, space, and off-road capability with Porsche’s trademark sporty spirit.</p>
+          </div>
+        </div>
+    </main>
+    <footer>
+        <p>Follow Porsche on:</p>
+        <a href="https://www.facebook.com/porsche" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/porsche" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/porsche" target="_blank">Instagram</a>
+        <a href="https://www.pinterest.com/porsche" target="_blank">Pinterest</a>
+        <a href="https://www.youtube.com/porsche" target="_blank">Youtube</a>
+        <br>
+        <p>&copy; 2025 Porsche. All rights reserved. | <a href="#legal">Legal Services</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

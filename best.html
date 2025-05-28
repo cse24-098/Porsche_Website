@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Porsche Website</title> 
+</head>
+<body>
+   <header class="header">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Porsche Logo" class="logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <form class="search-bar" onsubmit="return handleSearch(event)">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="motorsports.html">Motorsports</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">More
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="generations.html">Generations</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="login.html">Login</a>
+            <a href="sign.html">Sign Up</a>
+        </div>
+    </nav>
+    
+    <main>
+        <h2>Porsche's Top Sold Cars.</h2>
+        <p> Over the decades, Porsche has crafted machines that thrill the senses and dominate the roads. While the brand is known for its precision engineering and motorsport success, it’s the best-selling models that have driven Porsche’s global popularity. 
+            From iconic sports cars like the 911 to luxury SUVs like the Cayenne and innovative EVs like the Taycan — these are the models that define success, performance, and evolution. 
+            Let's explore the cars that made Porsche not just a legend on the track, but a leader on the road.
+        </p>
+        
+            <h2>Porsche 718 - The Purest Expression of Driving</h2>
+            <p>The Porsche 718 series is where the thrill of pure drving meets porsche's racing legacy. Inspired by the legendary 1950s 718 cars, this modern revival captures the essence of mid-engine balance and precision handling. Designed for drivers who want every curve to feel like a conversation with the road, the 718 lineup offers lightness, responsiveness, and unmistakable Porsche performance, all in a sleek, road-hugging package.
+                Whether you choose the iconic 718 Cayman coupe or the open-top 718 Boxster, these machines are built for spirited driving with engines that growl and styling that turns heads.
+                Among the standout best sellers are the <span style="font-weight:bold;">718 Cayman GTS 4.0</span>, revered for it's naturally aspirated flat six and razor-sharp handling, and <span style="font-weight:bold">the 718 Boxster S</span>, which offers the same midengine perfomance with the added thrill of open-air freedom. These models continue to lead the market for enthusiasts who crave the traditional sports car feel, raw, focused and unmistakably Porsche.</p>
+             <div class="porsche-grid">
+                <div class="porsche-item">
+                    <img src="Images/gts.jpeg" alt="Porsche 718 Cayman GTS 4.0">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Naturally aspirated 4.0L flat-six engine</span> - It delivers the raw, high-revving sound and responsiveness that purists love.</li>
+                        <li><span style="font-weight: bold;">Perfect balance</span> - Mid-engine layout and finely tuned suspension give it razor-sharp hnadling.</li>
+                        <li><span style="font-weight: bold;">Track-worthy and street-legal</span> - Blends motorsport spirit with everyday usability</li>
+                        <li><span style="font-weight: bold;">Manual transmission available</span> - Rare in modern sports cars, giving it an old school, engaging driving experience.</li>
+                        <li><span style="font-weight: bold;">Emotionally rich experience</span> - For many enthusiasts, this model feels like the "sweet spot" of perfomance, price and purity.</li>
+                    </ul>
+                </div>
+            
+                <div class="porsche-item">
+                    <img src="Images/boxter-s.jpeg" alt="Porsche 718 Boxster S">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Open-top driving experience</span> - Combines high perfomance with the joy of top-down motoring</li>
+                        <li><span style="font-weight: bold;">2.5L turbocharged flat-four engine</span>Strong performance(350hp) with responsive torque delivery</li>
+                        <li><span style="font-weight: bold;">Balanced power and luxury</span> - Great option for those wanting performance without stepping into GTS pricing.</li>
+                        <li><span style="font-weight: bold;">Everyday drivability</span> - Comfortable cabin and solid cargo space make it surprisingly practical.</li>
+                        <li><span style="font-weight: bold;">A top pick for new Porsche buyers</span> - Many first-time Porsche owners choose this as their entry point into the brand.</li>
+                    </ul>
+                </div>
+
+                <div class="porsche-item">
+                    <img src="Images/Cayman_s.jpeg" alt="Porsche Cayman S">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Mid-tier performance punch</span> - Offers more power (350hp) than the base Cayman without the price tag of the GTS.</li>
+                        <li><span style="font-weight: bold;">Turbocharged engine</span> - Quick acceleration and strong midrange power make it a joy to drive.</li>
+                        <li><span style="font-weight: bold;">Excellent value</span> - A sweet spot between base and high end models</li>
+                        <li><span style="font-weight: bold;">Great daily sports car</span> - Comfortable enough for regular use, but still thrilling on twisty roads.</li>
+                        <li><span style="font-weight: bold;">Highly customizable</span> - Buyers love the ability to add perfomace or luxury options to suit their taste.</li>
+                    </ul>
+                </div>
+
+                <div class="porsche-item">
+                    <img src="Images/spyder.jpeg" alt="Porsche 718 Spyder">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Pinnacle of the 718 Boxster lineup</span> - Shares components with the track-focused Cayman GT4.</li>
+                        <li><span style="font-weight: bold;">High-revving 4.0L flat-six engine</span> - Pure, powerful and exhilarating, with 414hp and 7600 rpm redline.</li>
+                        <li><span style="font-weight: bold;">Lightweight and driver-focused</span> - No unnecessary tech fluff; its all about pure driving.</li>
+                        <li><span style="font-weight: bold;">Manual transmission only (initially)</span> - Gives it the purist appeals.</li>
+                        <li><span style="font-weight: bold;">A collector's dream</span> - Limited numbers and motorsport heritage make it highly desirable</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Porsche 911-The Icon That Redefined Perfomance</h2>
+            <p>Few cars carry a legacy as rich and enduring as the Porsche 911. First launched in 1964, the 911 has evolved over decades into a symbol of engineering perfection, blending timeless design with cutting-edge perfomance. It's unmistakable silhoutte - smooth curves, rear-engine layout, and wide stance - is instantly recognizable, and it's driving dynamics have been honed through geenrations of motorsport innovation. Whether on the Auotbahn or the racetrack, the 911 delivers a uniquely emotional experience: a harmony of power, control and connect between driver and machine.
+                Todays's 911 range is more diverse and powerful than ever, offering something for every performance enthusiast. Best-selling variants like the <span style="font-weight: bold;">911 Carrera S</span> combine luxury and speed with everyday usability, while the <span style="font-weight: bold;">911 Turbo S</span> pushes the limits with breathtaking acceleration and all-wheel-drive stability. The 911 GT3, born from Porsche's motorsport roots, is a fan-favorite for track purists, boasting a naturally aspirated flat-six and arodynamic precision. The variants continue to dominate global sports car sales because they offer not just perfomance, but heritage, the feeling of driving a legend, reimagined for the modern world.</p>
+            
+            <div class="porsche-grid">
+                <div class="porsche-item">
+                    <img src="Images/911_carrera.jpg" alt="Porsche 911 Carrera">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Classic 911 experience</span> - Rear-engine, rear-wheel drive layout offers the "purest" 911 feel</li>
+                        <li><span style="font-weight: bold;">Balance of performance and usability</span> - Great for both daily driving and spirited weekend rides</li>
+                        <li>More affordable compared to higher-end variants, bringing more customers in.</li>
+                        <li><span style="font-weight: bold;">Timeless design with modern tech</span> - a mix of heritage and innovation</li>
+                        <li>Strong resale value and brand loyalty keep demand high.</li>
+                    </ul>
+                </div>
+            
+                <div class="porsche-item">
+                    <img src="Images/911_turbo.jpg" alt="Porsche 911 Turbo">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Supercar performance</span> - 0-100 km/h in around 2.7 seconds (Turbo S) with insane top speed.</li>
+                        <li><span style="font-weight: bold;">Advanced all-wheel drive system</span> - excellent traction and control in all weather.</li>
+                        <li><span style="font-weight: bold;">Luxury and comfort</span> - Even with speed, it doesn't sacrifice comfort or features.</li>
+                        <li><span style="font-weight: bold;">Versatile supercar</span> - You can use it every day, unlike many exotic sports cars.</li>
+                        <li><span style="font-weight: bold;">Turbo name has heritage</span> - It's legendary since the 1975 911 Turbo, keeping buyers loyal.</li>
+                    </ul>
+                </div>
+
+                <div class="porsche-item">
+                    <img src="Images/911_carrera_s.jpg" alt="Porsche 911 Carrera S">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Everyday performance beast</span> - It offers supercar-level perfomance with daily drivability.</li>
+                        <li><span style="font-weight: bold;">3.0L twin-turbo flat-six engine</span> - Produces ~443hp with blistering acceleration(0-100km/h in ~3.5s with PDK)</li>
+                        <li><span style="font-weight: bold;">Wide appeal</span> - It’s the go-to model for Porsche fans who want the “911 experience” without going extreme.</li>
+                        <li><span style="font-weight: bold;">Advanced tech and comfort</span> - Adaptive suspension, active aero, luxurious interior, and infotainment upgrades.</li>
+                        <li><span style="font-weight: bold;">Rear- or all-wheel-drive</span> - Flexibility depending on climate or preference.</li>
+                    </ul>
+                </div>
+
+                <div class="porsche-item">
+                    <img src="Images/911_targa_4_gts.jpg" alt="Porsche 911 Targa 4 GTS">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Unique styling</span> - The retractable roof and classic Targa bar blend retro charm with modern engineering.</li>
+                        <li><span style="font-weight: bold;">Best of both worlds</span> - Offers the coupe's rigidity and the cabriolet's open-air freedom</li>
+                        <li><span style="font-weight: bold;">3.0L twin turbo flat-six</span> - Around 443 hp, same as the Carrera S.</li>
+                        <li><span style="font-weight: bold;">All-wheel drive</span> - Excellent for year-round usability and road confidence.</li>
+                        <li><span style="font-weight: bold;">Luxury cruiser</span> - Appeals to those who want style, elegance and everyday perfomance.</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <h2>Porsche Cayenne - The SUV That Saved Porsche</h2>
+            <p>When the Cayenne launched in 2002, it shocked purists - a Porsche SUV? But this bold move didn't just succeed; it transformed the company. The Cayenne brought Porsche'e legendary perfomance DNA into a new era of utility, comfort and practicality. It proved that a vehicle could be <span style="font-weight: bold;">both a family-friendly SUV and a true driver's machine, </span>capable of tackling winding roads and daily commutes with equal finesse.
+                Now in it's thrid generation, the Cayenne lineup continues to be a sales pwerhouse globally. It comes in a wide range of variants that suit different lifestyles and markets. The <span style="font-weight: bold;">Cayenne S</span> delivers the perfect balance of luxury and sporty dynamics with it's twin-turbo V6. Meanwhile, the <span style="font-weight: bold;">Cayenne E-Hybrid</span> caters to eco-conscious drivers looking for electric performance without range anxiety. Then there's the <span style="font-weight: bold;">Cayenne Turbo GT</span> a beast on wheels that defies the SUV  category altogether, faster around a track than many sports cars.
+                Whether you're chasing speed, efficiency, or comfort, the Cayenne remains one of Porsche's best-selling nameplates by proving that performance doesn't have to come at the cost of practicality.</p>
+
+            <div class="porsche-grid">
+                <div class="porsche-item">
+                    <img src="Images/cayenne_s.jpg" alt="Porsche Cayenne S">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li>Twin-turbo V6 with ~434 hp: strong performance.</li>
+                        <li>Mid-range price: more power than base, cheaper than Turbo.</li>
+                        <li>Ideal balance of sportiness and luxury.</li>
+                        <li>Spacious and family-friendly.</li>
+                        <li>Customizable with performance/luxury add-ons.</li>
+                        <li>Appeals to global markets (US, EU, China)</li>
+                    </ul>
+                </div>
+        
+                <div class="porsche-item">
+                    <img src="Images/e_hybrid.jpg" alt="Porsche Cayenne E-Hybrid">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li>Short electric-only range for city driving.</li>
+                        <li>Tax incentives and lower fuel costs in many countries.</li>
+                        <li>Eco-friendly without sacrificing Porsche performance.</li>
+                        <li>Perfect for families wanting both power and efficiency.</li>
+                        <li>A transition option for buyers not ready for full EVs.</li>
+                    </ul>
+                </div>
+
+                <div class="porsche-item">
+                    <img src="Images/cayenne_gts_coupe.jpg" alt="Porsche Cayenne GTS Coupe">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                    <li><span style="font-weight: bold;">Exceptional Perfomance</span> - Accelerates from 0 to 100 km/h in approximately 3.1 seconds, rivaling many sports cars.</li>
+                    <li><span style="font-weight: bold;">Track-Ready</span> - Holds the Nürburgring lap record for SUVs, showcasing its engineering prowess.</li>
+                    <li><span style="font-weight: bold;">Exclusive Design</span> - Features unique styling cues and performance enhancements that set it apart.</li>
+                    <li><span style="font-weight: bold;">Ultimate Luxury SUV</span> - Combines the practicality of an SUV with supercar-level performance, appealing to a niche market seeking both.</li>
+                    </ul>
+                </div>
+
+                <div class="porsche-item">
+                    <img src="Images/cayenne.jpg" alt="Porsche Cayenne Base">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Affordabilty</span> - As the entry-level model, it offers the Porsche experience at a more accessible price point.</li>
+                        <li><span style="font-weight: bold;">Balanced Perfomance</span> - Delivers sufficient power for daily driving while maintaining fuel efficiency.</li>
+                        <li><span style="font-weight: bold;">Luxury Features</span> - Comes standard with a 12.3-inch touchscreen, 10-speaker stereo, and Wi-Fi hotspot, providing a premium feel without additional costs.</li>
+                        <li><span style="font-weight: bold;">Versality</span> - Ideal for families seeking a luxury SUV that doesn't compromise on practicality.</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <h2>Porsche Macan - Compact, Sporty and Unmistakably</h2>
+            <p>The Porsche Macan, intorduced in 2014 was designed to offer the soul of a sports car in the body of a compact SUV, and it absolutely delivered. Smaller and more city-oriented than the Cayenne, the Macan quickly became one of Porsche's top globally sellers, especially among first-time Porsche buyers. It's often reffered to as the "entry-level" about how it drives. Agile, powerful and beautifully designed, the Macan is a true Porsche, just in a more versatile package.
+                The Macan Base is the gateway to Porsche ownership, offering a 2.0L turbocharged engine that balances performance an fuel efficiency, perfect for urban drivers who want everyday usability without sacrificing prestige. The <span style="font-weight: bold;">Macan S</span>, with it's 2.9L twin-turbo V6, ups the ante with more horsepower and a luxurious intetior experience. And for those who want SUV practicality with serious speed, there's the <span style="font-weight: bold;">Macan GTS</span>, delievering close th 440HP with sporty tuning and an exhaust note that sings.
+                Blending a daily comfort, cutting-edge tech, and classic Porsche engineering, the Macan has become a gateway icon, a model that's both accessible and aspirational. It proves that practicality and performance can not only coexist, but thrive together. 
+            </p>
+            <div class="porsche-grid">
+                <div class="porsche-item">
+                    <h5>Porsche Macan Base</h5>
+                    <img src="https://www.avisprestige.com/images/galleryImage/cropped/porsche-macan.jpeg" alt="Porsche Macan Base">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Affordable Porsche SUV</span> - It offers a premium badge at a more accessible price.</li>
+                        <li><span style="font-weight: bold;">2.0L turbocharged engine</span> - Enough power for daily driving while keeping fuel economy reasonable.</li>
+                        <li><span style="font-weight: bold;">Compact and city-friendly</span> - Easy to handle in urban environments but still feels like a Porsche.</li>
+                        <li><span style="font-weight: bold;">Good practicality</span> - Decent boot space and family-ready comfort.</li>
+                        <li><span style="font-weight: bold;">Attracts new customers</span> - First-time Porsche owners often choose this variant.</li>
+                    </ul>
+                </div>
+        
+                <div class="porsche-item">
+                    <h5>Porsche Macan S</h5>
+                    <img src="https://files.porsche.com/filestore/image/multimedia/none/pa3-s-modelimage-sideshot/model/1b5ff6f9-c16c-11ec-80ef-005056bbdc38/porsche-model.png" alt="Porsche Macan S">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Upgraded 2.9L V6 engine</span> - Adds significantly more power (375+ hp) over the base model.</li>
+                        <li><span style="font-weight: bold;">Better handling and sporty tuning</span> - A real Porsche feel in an SUV body.</li>
+                        <li><span style="font-weight: bold;">More premium interior</span> - Adds features like adaptive suspension, premium sound systems, and better materials.</li>
+                        <li><span style="font-weight: bold;">Balance of luxury and performance</span> - Hits the sweet spot for most Porsche SUV buyers.</li>
+                    </ul>
+                </div>
+
+                <div class="porsche-item">
+                    <h5>Porsche Macan GTS</h5>
+                    <img src="Images/macan_gts.jpg" alt="Porsche Macan GTS">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Sporty-Tuned Dynamics</span> - Features perfomace enhancements like adaptive suspension and exhaust.</li>
+                        <li><span style="font-weight: bold;">Distinct Styling</span> - Unique design elements set it apart visually.</li>
+                        <li><span style="font-weight: bold;">Driver's Choice</span> - Tailored for enthusiasts seeking a more engaging driving experience.</li>
+                        <li><span style="font-weight: bold;">Track-Capable</span> - Balances everyday usability with capabilities suited for spirited driving.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Porsche Taycan - Electrifying the Future of Performance</h2>
+            <p>The<span style="font-weight: bold;">Porsche Taycan</span> isn't just a response to the electric revolution, it is a bold declaration that EVs can thrill the soul just as much as they can save the planet. Unveiled in 2019, the Taycan was Porsche's first fully electric vehicle, and rather than just making a quiet, clean car, they made a true Porsche: sleek, aggressive, and engineered with the same DNA that defines the brands's legacy, performance machines.
+                At the heart of the Taycna is it's 800-volt architecture, allowing for lightning-fast charging and sustained high-speed perfomance without overheating, a feat that few EVs can manage. But what makes the Taycan truly shine is that it feels alive when you drive it. The low center of gravity(thanks to the battery placement), razor-sharp steering and blistering acceleration give it an edge that's more sports car than sedan.
+                The lineup starts with the Taycan Base, a rear-wheel-drive model that still packs a punch with it's responsive dynamics and clean, minimalist interior. Step up to the Taycan 4S and you get all-wheel-drive, a significant boost in horsepower, and more performance-focused tuning. Then there's the Taycan Turbo and Turbo S, ironically named since there are no turbos, which deliver jaw-dropping acceleration, with Turbo S laundhing from 0-100km/h in 2.8seconds. And let's not forget the Taycan Cross Turismo and Sport Turismo variants, blendong station wagon versetility with electrc performance.
+                What makes the Taycan a best-seller isnt just the zero-emission appeal, it's the fact it brings emotion to electric driving. It's fast, futuristic and beautifully designed inside and out, proivng that going electric doesn't mean giving up on fun, luxury or identity.</p>
+            <div class="porsche-grid">
+                <div class="porsche-item">
+                    <h5>Porsche Taycan 4S</h5>
+                    <img src="Images/taycan_4s.jpg" alt="Porsche Taycan 4S">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li>Best price-to-performance ratio - Offers strong performance at a more accessible price point than Turbo/Turbo S.</li>
+                        <li>Dual motor all-wheel drive - Great for all-weather driving and high performance.</li>
+                        <li>Up to ~500 km range (depending on battery) - Makes it a practical daily electric sports car.</li>
+                        <li>Smooth and comfortable ride - Balances sporty driving with everyday usability.</li>
+                        <li>Most versatile choice - Appeals to both enthusiasts and newcomers to electric vehicles.</li>
+                    </ul>
+                </div>
+
+                <div class="porsche-item">
+                    <h5>Porsche Taycan GTS</h5>
+                    <img src="Images/taycan_gts.jpg" alt="Porsche Taycan GTS">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Driver's EV</span> - The GTS  is aimed at enthusiasts. It strikes a thrilling balance with 590 hp and 0-100km/h in 3.7seconds, delivering consistent power without overheating during track sessions</li>
+                        <li><span style="font-weight: bold;">Sporty design cues</span> - features unique GTS styling, black accents, GTS-exclusive wheels, and Alcantara interiors.</li>
+                        <li><span style="font-weight: bold;">Sharpened handling</span> - With a perfomance-tuned suspension and standard Performance Battery Plus, the GTS offers an incredibly connected and responsive ride.</li>
+                    </ul>
+                </div>
+
+                <div class="porsche-item">
+                    <h5>Porsche Taycan Cross Turismo 4</h5>
+                    <img src="Images/cross_turismo.jpg" alt="Porsche Taycan Cross Turismo 4">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Versatile and adventurous</span> - with increased ground clearance and rugged body cladding, it's built for who want electric luxury and practicality for all road conditions.</li>
+                        <li><span style="font-weight: bold;">Spacious rear and cargo room</span> - thanks to the wagon-like shape, it provides more headroom and a larger boot, making it ideal for families or active lifestyles. </li>
+                        <li><span style="font-weight: bold;">Perfomance + utility</span> - dual-motor AWD system offers 469 hp and instant torque, while still offering room for nikes, luggage and more</li>
+                    </ul>
+                </div>
+            </div>
+     
+            <h2>Porsche Panamera - Where Luxury Meets Race-Bred DNA</h2>
+            <p>The <span style="font-weight: bold;">Porsche Panamera</span> sits at the crossroads of performance and prestige, offering the comfort of a luxury sedan with the heart and handling of a sports car. Introduced in 2009 as Porsche's answer to the high-end four-door saloon market, the Panamera challenged expectations. Could a long, luxurious Porsche still feel like a true driver's dream car? The answer was and stil is a resounding yes.
+                From the outside, the Panamera exudes sleek aggression, with flowing lines and a fastback rear that hints at it's sporty intentions. It bridges the gap between daily usability and weekend performance thrills, amking it top choice among enthusiats who refuses to compromise. Inside, you're met with Porsche's high-tech luxury: multi-screen interfaces, top-tier leather, and an atamosphere that combines racing cues with boardroom-level elegance.
+                The lineup starts with the Panamera Base and Panamera 4, offering V6 turbo engines and AWD options. Moving up, you get the Panamera 4S, GTS, and the mighty Turbo and Turbo S variants, the latter delivering over 620hp and crushing 0-100km/h in around 3.1seconds. For those looking to reduce emissions without sacrificing perfomance, Porsche also offers plug-in hybrid variants, like the Panamera $ E-Hybrid and the insane turbo S E-Hybrid , which blends electric torque with V8 fury.
+                Then there's the Panamera Sport Turismo, a wagon-inspired model that offers more cargo space with the same athleticism, combining practicality with panache
+                The Panamera earns its best seller status by fusing comfort, versality and dynamic performance. It appeals to executives, luxury lover, and petrolheads alike. Whether carving through mountain roads or cruising the Auotbahn, the Panamera reminds you that luxury doesn't have to mean boring.</p>
+            <div class="porsche-grid">
+                <div class="porsche-item">
+                    <img src="Images/4e_hybrid.jpg">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Hybrid powertrain</span> - Offers electric driving for short commutes and gas for long trips.</li>
+                        <li><span style="font-weight: bold;"></span>Eco-conscious luxury - Combines performance with lower emissions, appealing to modern buyers.</li>
+                        <li><span style="font-weight: bold;"></span>Tax benefits - In many countries, hybrids get incentives or tax reductions.</li>
+                        <li><span style="font-weight: bold;"></span>Dual personality - Comfortable in city traffic, but powerful on highways (over 460 hp).</li>
+                        <li><span style="font-weight: bold;">Practicality </span>Practicality - Four doors, spacious interior, good cargo space = family-friendly sports car.</li>
+                    </ul>
+                </div>
+
+                <div class="porsche-item">
+                    <img src="Images/panamera_4.jpg" alt="Porsche Panamera 4">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Balanced performance</span> - Equipped with a twin-turbo V6 engine, it offers a harmonious blend of power and efficiency.</li>
+                        <li><span style="font-weight: bold;">All-wheel drive</span> - Enhances traction and stability, making it suitable for various driving conditions.</li>
+                        <li><span style="font-weight: bold;">Luxury features</span> - Includes high-end interior materials and advanced technology for comfort and convenience.</li>
+                    </ul>
+                </div>
+
+                <div class="porsche-item">
+                    <img src="Images/panamera_gts.jpg" alt="Porsche Panamera GTS">
+                    <h6>Why is it the best?</h6>
+                    <ul>
+                        <li><span style="font-weight: bold;">Sporty dynamic</span> - Features a naturally aspirated V8 engine, delivering exhilarating performance and a distinctive exhaust note.</li>
+                        <li><span style="font-weight: bold;">Driver-focused</span> - Tuned for enthusiasts seeking a more engaging driving experience without compromising luxury.</li>
+                        <li><span style="font-weight: bold;">Unique styling</span> - Sportier design elements set apart from other Panamera models</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        //close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+    <script>
+        function handleSearch(event) {
+            event.preventDefault(); //stop form from refeshing page
+            const query = document.getElementById("searchInput").value.trim().toLowerCase();
+
+            //define known models
+            const validModels = {
+                "911": "porsche911.html",
+                "718": "porsche718.html",
+                "cayenne": "porsche_cayenne.html",
+                "macan": "porsche_macan.html",
+                "panamera": "porsche_panamera.html",
+                "taycan": "porsche_taycan.html"
+            };
+
+            if (query in validModels) {
+                window.location.href = validModels[query]; //redirect to that page
+            }else{
+                alert("Models not found. Please try another Porsche model.");
+            }
+        }
+    </script>
+    <footer>
+        <p>Follow Porsche on:</p>
+        <a href="https://www.facebook.com/porsche" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/porsche" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/porsche" target="_blank">Instagram</a>
+        <a href="https://www.pinterest.com/porsche" target="_blank">Pinterest</a>
+        <a href="https://www.youtube.com/porsche" target="_blank">Youtube</a>
+        <br>
+        <p>&copy; 2025 Porsche. All rights reserved. | <a href="#legal">Legal Services</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

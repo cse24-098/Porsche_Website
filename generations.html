@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Porsche Website</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Porsche Logo" class="logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <form class="search-bar" onsubmit="return handleSearch(event)">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>      
+            <a href="motorsports.html">Motorsports</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">More
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="generations.html" class="active">Generations</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="login.html">Login</a>
+            <a href="sign.html">Sign Up</a>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Generations of Porsche Cars</h2>
+        <p>A car generation marks a major redesign or update more than just a yearly refresh. Think of it as a new chapter in a model's life, bringing fresh engineering, design, and tech. These changes can include a new chassis, upgraded engines, sharper styling, and smarter features, often spanning 5-10 years before the next big leap.
+            Porsche's legendary 911 is a perfect example. Since the 1960s, each generation has refined its iconic formula boosting performance, tweaking its silhouette, and adding modern tech, while staying true to its roots. For enthusiasts, tracking these generations isn't just about specs, it's about the story of how a model evolves without losing its soul.
+            In short: Generations are how cars grow up. They balance innovation with tradition, and for brands like Porsche, that's everything.
+        </p>
+
+        <h2>Decoding Porsche's Model Names: What do they mean?</h2>
+        <p>Porsche's naming system isn't jsut random letters, its a language of perfomance, heritage, and engineering. Here's what those badges really stand for:</p>
+        <h5>Carrera- The Pure Essence of the 911 </h5>
+        <p>Derived from the legendary <span style="font-weight: bold;"> Carrera Panamericana</span>, a gruelingMexican road race, Carrera represents Porsche's racing DNA. Today, it marks the core 911 models, like the 911 Carrera or Carrera S, blending everyday usability with thrilling perfomance. Think of it as the perfect balance between a sports car and a daily driver.</p>
+        <h5>Targa - Open-Air, Signature Style</h5>
+        <p>Inspired by the Targa Florio, a historic Italian endurance race, the Targa is Porsche's iconic semi-convertible. It's not a full convertible, instead it features a removable roof panel and a wraparound glass rear window giving you wind-in-hair freedom while keeping the 911's sleek silhoutte intact.</p>
+        <h5>Turbo - Power, Grip, and Prestige</h5>
+        <p>The most modern Porsches have turbocharged engines, but when you see Turbo on the badge, it means top-tier perfomance. These models pack insane power, advanced all-wheel-drive, aggressive aerodynamics, and cutting-edge tech. The turbo badge isn't just about speed, it is about dominance.</p>
+        <h5>GT and RS</h5>
+        <p>In the world of Porsche, GT and RS aren't just letters, they represent the pinnacle of performance engineering and motorsport heritage.<span style="font-weight: bold;"> GT</span>, short for Gran Turismo (Italian for "Grand Touring"), refers to Porsche models built for exhilarating speed, precision handling, and endurance. GT cars like the 911 GT3 or Cayman GT4 are designed to dominate both the road and the track, often with naturally aspirated engines, lightweight components, and motorsport-grade aerodynamics.
+            <span style="font-weight: bold;">RS</span>, which stands for Rennsport (German for "racing sport"), takes things even further. It's reserved for Porsche's most hardcore, track-focused variants think 911 GT3 RS or the iconic 911 Carrera RS 2.7. RS models are stripped of unnecessary weight, feature aggressive aero kits, and prioritize racing performance over comfort. When you see an RS badge, you're looking at the closest thing to a street-legal race car Porsche offers.</p>
+        <div class="section" id="sectionGenerations">
+            <h2>The Main Porsche Models and their Generations.</h2>
+
+            <div id="section-nav">
+                <button onclick="showContent('911')">911</button>
+                <button onclick="showContent('718')">718</button>
+                <button onclick="showContent('panamera')">Panamera</button>
+            </div>
+
+            <div id="content-display">
+                <p> click a button above to learn more about the porsche generations.</p>
+            </div>
+        </div>
+
+        <script>
+            function showContent(type) {
+                let content = "";
+
+                if (type === "911") {
+                    content = `
+                   <h3>About the Porsche 911</h3>
+                    <p>The Porsche 911 is a legendary sports car that has been in production since 1964. Known for its distinctive design and rear-engine layout, the 911 has become an icon in the automotive world. It offers a perfect blend of performance, luxury, and everyday usability.</p>
+                    <div class="gen-section">
+                        <div class="gen-row">
+                            <div class="gen-text">
+                                <h2>Porsche 911 classic(1964-1973)</h2>
+                                <p>The original 911, known as the 901, was introduced in 1964. It wasn't just a successor of the 356, it was a revolution. Designed by Ferdinand "Butzi" Porsche, the 911 debuted with a sleek, timeless silhouette, a rear-mounted 2.0L flat-six engine, and a charismaric air-cooled growl. It's combination of everyday usability and thrilling performance set a new standard for sporst cars.</p>
+                                <p>Early models (1964-1968) featured 130 horsepower, a 5-speed manual transmission, and delicate chrome details, but Porsche quickly refined the formula. By 1966, the 911S arrived with 160hp, whilw the 1967 Targa introduced a removable roof panel, creating the world's first production safety convertible. The 911's reputation for agility and engineering excellence grew, even as rivals dismissed it's "engine in the wrong place" layout.</p>
+                                <p>By the end of it's first generation in 1973, the 911 had evolved into the 911 Carrera RS 2.7, a homologation special with a 210hp engine, ducktail spoiler and lightweight construction cementing its status as a motorsport legend. Despite it's quirks (like a rear weight bias that demanded skill to drive fast), the original 911's DNA, analog feel, mechanical purity, and addictive handling still defines Porsche's philosophy today.</p>
+                            </div>
+                            <div class="gen-card">
+                                <div class="card">
+                                    <img src="https://images.opumo.com/wordpress/wp-content/uploads/2018/08/Opumo-Magazine-Banner-RETINA-1-10.jpg" alt="Porsche 911 Classic">
+                                    <div class="gen-card-text">
+                                        <ul>
+                                            <li>Production Years: 1964-1974</li>
+                                            <li>Model Year: 1964-1974</li>
+                                            <li>Designer: Ferdinand Alexander Porsche, Erwin Komenda</li>
+                                            <li>Body Style: 2-door coupe, 2-door targa</li>
+                                            <li>Layout: Rear engine, RWD</li>
+                                            <li>Engines: 1.6L Aircooled Flat 4(912), 2.0L Aircooled Flat 6, 2.2L Aircooled Flat 6, 2.4L Aircooled Flat 6, 2.5L Aircooled Flat 6, 2.7L Aircooled Flat 6, 2.8L Aircooled Flat 6.</li>
+                                            <li>Transmission: 4-speed manual, 5-speed manual, 4-speed auto.</li>
+                                            <li>Premiere: September 12, 1973 IAA Frankurt</li>
+                                        <ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gen-row reverse">
+                            <div class="gen-text">
+                                <h2>Porsche 911 964 (1989-1994)</h2>
+                                <p>The 964 was the first major update to the 911, featuring a more modern design and improved aerodynamics. It introduced all-wheel drive and a new 3.6-liter engine. When the Porsche 964 debuted in 1989, its wasn't just an update, it was a complete reinvention of the 911. After 15 years of the classic G-series (impact-bumper 911s), Porsche needed to modernize it's icon without losing it's soul. The result? A car that retained the 911's unmistakable silhouette but introduced cutting-edge technology that set the stage for future generations.</p>
+                                <p>Underneath its familiar curves, the 964 was 85% new. It featured Porsche's first all-wheel-drive system(Carrera 4), a redesigned 3.6L flat-six engine (producing 247hp), and innovations like power steering, ABS, and a redesigned suspension with coil springs instead of torsion bars. For purists, the rear-wheel-drive Carrera 2 remained anoption, while the Turbo model boasted a 3.3L turbocharged engine with 320hp, making it the fastest production car of its time. The 964 introduced the Targa model with a retractable glass roof, blending coupe and convertible elements. It also birthed legendary variants like the 964 RS, a lightweight, track-focused version that became a cult classic.</p>
+                            </div>
+                            <div class="gen-card">
+                                <div class="card">
+                                    <img src="https://th.bing.com/th/id/R.4f1ec511041833daf8dfe092271f8e19?rik=x0UIj2X%2b6p0cCQ&pid=ImgRaw&r=0" alt="Porsche 911 964">
+                                    <div class="gen-card-text">
+                                        <ul>
+                                            <li>Production Year: 1984-1993</li>
+                                            <li>Model Year: 1984-1993</li>
+                                            <li>Designer: Benjamin Dimson</li>
+                                            <li>Body Style: 2-door Coupe, Roadster, Targa, Speedster</li>
+                                            <li>Layout: Rear-engine, RWD/AWD</li>
+                                            <li>Engines: 3.3L M30/69 turbo flat-6, 3.6L M64/01, 02, 03, 3.6L M64/50 turbo, 3.75L M64/04 (3.8 Rs/RSR)</li>
+                                            <li>Production: 63,762 units</li>
+                                            <li>Premiere: 1988 September 28 at Mondial de I'Automobile Paris.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gen-row">
+                            <div class="gen-text">
+                                <h2>Porsche 911 993 (1994-1998)</h2>
+                                <p>The 993 is often considered the last of the "classic" 911s, featuring a more rounded design and improved performance. Revered by enthusiats as one of the purest and most beautifully engineered 911s ever made, the 993 refined the 964's innovations while adding a more sophisticated, driver-focused experience. Its sleek, widened body and iconic "fried egg" headlights gave it a distinct look, but beneath the skin, its was a mechanical masterpiece.</p>
+                                <p>Porsche's engineers reworked the 3.6L flat-six engine with lighter components, smoother variable valve timing(Varioram), and an optimized exhaust, boosting power to 272-285hp in the Carrera models. The rear multi-link suspension, a first for the 911, transformed handling, making the 993 more planted and predictable than any of it's predecessors. The all-wheel-drive Carrera 4S and the ferocious Turbo(with twin turbos and up to 450 hp in the GT2) pushed perfomance to new heights, while the Targa's innovative glass roof redefined open-top motoring.</p>
+                                <p>The 993 also introduced some of the most desirable limited editions, like the GT2 (a stripped-down, turbocharged track beast) and the RS Clubsport (a lightweight, naturally aspirated thrill machine). Today, the 993 is a collector’s dream, symbolizing the last true analog 911,a perfect balance of classic Porsche character and modern refinement.</p>
+                            </div>
+                            <div class="gen-card">
+                                <div class="card">
+                                    <img src="https://st.automobilemag.com/uploads/sites/5/2018/08/Porsche-993-Turbo_OneOnly-003.jpg" alt="Porsche 911 993">
+                                    <div class="gen-card-text">
+                                        <ul>
+                                            <li>Production Year: 1994-1998</li>
+                                            <li>Model Year: 1994-1998</li>
+                                            <li>Designer: Tony Hatter</li>
+                                            <li>Body Style: 2-door Coupe, Roadster, Targa, Speedster</li>
+                                            <li>Layout: Rear-engine, RWD, Rear-engine, AWD</li>
+                                            <li>Engines: 3.6L-3.8L Aircooled naturally aspirated/Twin-Turbo M64 SOHC flat-six</li>
+                                            <li>Transmission: 4-speed auto, 5-speed manual,6-speed manual</li>
+                                            <li>Premiere: 1993 September 9 at IAA Frankurt motor show</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gen-row reverse">
+                            <div class="gen-text">
+                                <h2>Porsche 911 996 (1997-2005)</h2>
+                                <p>The Porsche 996 represents one of the most pivotal moments in 911 history, a generation that saved the company's future while courting controversy among purists. When this completely redesigned 911 debuted, it marked several radical firsts: the abandonment of air-cooling in favor of a water-cooled 3.4L flat-six engine, a shared platform with the Boxster, and those infamous "fried egg" headlights that drew immediate criticism. Beneath the polarizing exterior lay genuine engineering breakthroughs - a stiffer chassis, improved aerodynamics, and modern electronics that brought the 911 into a new era while maintaining its essential character.</p>
+                                <p>Porsche took significant risks with the 996, but these bold moves paid off commercially and technologically. The base Carrera's 296 horsepower output represented a healthy increase over its predecessor, while later models like the awe-inspiring 414-horsepower Turbo and the track-focused GT3 proved water-cooling could deliver extraordinary performance. The 996 range eventually included some of the most extreme 911s ever made, including the rear-drive GT2 with its monstrous 462 horsepower. These high-performance variants demonstrated that even with modernization, the 996 retained the 911's core virtues of precision handling and driver engagement.</p>
+                                <p>Today, the 996 enjoys a remarkable renaissance as collectors and enthusiasts reappraise its merits. What was once dismissed as a betrayal of tradition is now celebrated as the last relatively simple, analog 911 - a car that balances modern reliability with classic driving feel. Its affordability compared to other generations has introduced new audiences to 911 ownership, while its racing pedigree (particularly in GT3 form) has cemented its place in Porsche's competition history. The 996's story is ultimately one of necessary evolution, proving that even radical change couldn't dilute the essential magic of the 911 formula.</p>
+                            </div>
+                            <div class="gen-card">
+                                <div class="card">
+                                    <img src="https://tse4.mm.bing.net/th/id/OIP.384pY0CW7RQGhob7RMrFYwHaFj?rs=1&pid=ImgDetMain" alt="Porsche 911 996">
+                                    <div class="gen-card-text">
+                                        <ul>
+                                           <li>Production Year: 1997-2004(2005 and 2006 for the 911 Turbo S, GT2 and GT3)</li>
+                                            <li>Model Year: 1997-2005</li>
+                                            <li>Designer: Pinky Lai(1993-1994), Harm Lagaay</li>
+                                            <li>Body Style: 2-door Coupe, Roadster, Targa</li>
+                                            <li>Layout: Rear-engine RWD/AWD</li>
+                                            <li>Engines: 3.4L Watercooled Flat-6(M96/01), 3.6L Watercooled Flat-6(M96/03), 3.6L Turbocharged Flat 6(M96/70), 3.6L Watercooled flat 6(M96/76), 3.6L Turbocharged Flat 6(M96.70S)</li>
+                                            <li>Transmission<:5-speed ZF 5HP19 auto, 5-speed Mercedes-Benz 5G-Tronic auto, 6-speed manual/li>
+                                            <li>Premiere: September 11 1997 at IAA Frankurt Motor Show</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gen-row">
+                            <div class="gen-text">
+                                <h2>Porsche 911 997 (2004-2013)</h2>
+                                <p>The Porsche 997 arrived as the savior of the 911's traditional values, masterfully blending modern engineering with classic Porsche character. Following the controversial 996 generation, Porsche listened to enthusiasts and delivered a 911 that felt immediately more special - round headlights returned in a more aggressive design, the interior received higher quality materials, and the driving experience recaptured that magical analog feel purists craved. Available initially with either a 3.6L (325 hp) or 3.8L (355 hp) flat-six engine, the 997 offered the perfect balance of daily usability and thrilling performance, with steering feel and chassis feedback that many consider the best of any modern 911.</p>
+                                <p>This generation saw Porsche perfect the water-cooled formula while expanding the 911's capabilities like never before. The 997 introduced groundbreaking models like the PDK dual-clutch transmission in 2008, the sublime 4.0L flat-six in the 2011 GT3 RS 4.0 (still considered one of the greatest road-going 911s ever made), and the ferocious 997.2 Turbo with 500 horsepower and near-supercar performance. The Carrera, S, 4, 4S, Targa, Cabriolet, GT3, GT3 RS, GT2, GT2 RS, and special editions like the Sport Classic gave buyers an unprecedented range of options to suit every taste and budget.</p>
+                                <p>What makes the 997 generation so revered today is its perfect positioning between analog purity and modern refinement. Early 997.1 models (2004-2008) retain hydraulic steering and simpler electronics, while the facelifted 997.2 (2009-2013) brought improved direct injection engines and reliability upgrades without sacrificing driver engagement. The 997's legacy lies in its ability to please both the heart and the head - it's practical enough for daily use yet thrilling on track, technologically advanced yet emotionally raw, and today represents what many consider the sweet spot in modern 911 ownership. As the last 911 with hydraulic power steering and the generation that restored Porsche's reputation after the 996 controversy, the 997 has become one of the most desirable modern classics in the lineup.</p>
+                            </div>
+                            <div class="gen-card">
+                                <div class="card">
+                                    <img src="https://s1.cdn.autoevolution.com/images/gallery/PORSCHE-911-Carrera-GTS--997--4330_21.jpg" alt="Porsche 911 997">
+                                    <div class="gen-card-text">
+                                        <ul>
+                                            <li>Production Year: (2004-2013)</li>
+                                            <li>Model Year: (2004-2014)</li>
+                                            <li>Designer: Grant Larson</li>
+                                            <li>Body Style: 2-door Coupe, Roadster, Targa, Speedster</li>
+                                            <li>Layout: Rear-engine, RWD/AWD</li>
+                                            <li>Engines: 3.6 L naturally aspirated/twin-turbo Flat-6, 3.8 L naturally aspirated/twin-turbo Flat-6, 4.0 L naturally aspirated Flat-6</li>
+                                            <li>Transmission: 5-speed auto, 6-speed manual, 7-speed PDK</li>
+                                            <li>Premiere: 2004 July 16 at all 85 German Porsche centres</li>
+                                            <li>Market Launch: July 17 2004</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gen-row reverse">
+                            <div class="gen-text">
+                                <h2>Porsche 911 991 (2011-2019)</h2>
+                                <p>The Porsche 991 marked a bold step into the future while honoring seven decades of 911 heritage. As the first 911 built on an entirely new platform since the 996, the 991 generation introduced groundbreaking innovations while carefully preserving the essence that makes a Porsche truly special. Its sleek, stretched silhouette - riding on a longer wheelbase with wider rear haunches - gave the 991 an unmistakable presence, while its advanced construction blended aluminum and steel to reduce weight despite increased dimensions.</p>
+                                <p>Under the skin, the 991 represented a technological tour de force. The base Carrera's 3.4L flat-six (350 hp) and Carrera S's 3.8L (400 hp) engines delivered silky power delivery, while the 2015 facelift (991.2) brought turbocharging across the range - a controversial but necessary evolution that boosted the Carrera S to 420 horsepower. Porsche's engineering brilliance shone through in models like the lightning-fast 991 Turbo S (560-580 hp) and the track-focused 991.2 GT3, which reintroduced a manual transmission by popular demand after the 991.1 GT3's PDK-only controversy. The crowning achievement came with the 991.2 GT2 RS - with 700 horsepower, it became the most powerful production 911 ever at its launch.</p>
+                                <p>What makes the 991 generation particularly significant is how it balanced cutting-edge technology with driver engagement. Features like rear-axle steering, the brilliant PDK transmission, and Porsche's first electromechanical steering system brought undeniable performance benefits, even if purists missed some analog feedback. The 991 also introduced the stunning Targa 4 with its innovative sliding glass roof, while the R and Speedster models paid beautiful homage to Porsche's racing heritage. Today, the 991 stands as a turning point - the generation that proved high-tech 911s could still thrill the soul, setting the stage for the hybrid future while delivering some of the most capable and versatile sports cars ever to wear the crest.</p>
+                            </div>
+                            <div class="gen-card">
+                                <div class="card">
+                                    <img src="https://s1.cdn.autoevolution.com/images/gallery/PORSCHE-911-Carrera-S--991--4476_36.jpg" alt="Porsche 911 991">
+                                    <div class="gen-card-text">
+                                        <ul>
+                                            <li>Production Year: (2011-2019)</li>
+                                            <li>Model Year: (2011-2019)</li>
+                                            <li>Designer: Michael Mauer(2008)</li>
+                                            <li>Body Style: 2-door Coupe, Roadster</li>
+                                            <li>Layout: Rear-engine, RWD/AWD</li>
+                                            <li>Engines: 3.0 L twin-turbo Flat-6, 3.4 L Flat-6, 3.8 L Flat-6, 3.8 L twin-turbo Flat-6, 4.0 L Flat-6</li>
+                                            <li>Transmission: 6-speed manual, 7-speed manual, 7-speed PDK</li>
+                                            <li>Premiere: 2011 September 15 at IAA Frankurt motorshow</li>
+                                            <li>Market Launch: December 3 2011</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gen-row">
+                            <div class="gen-text">
+                                <h2>Porsche 911 992 (2019-Present)</h2>
+                                <p>The Porsche 992 represents the most technologically advanced evolution of the 911 to date while masterfully preserving the iconic silhouette that has defined the model for nearly six decades. As the eighth generation of Porsche's legendary sports car, the 992 builds upon its predecessors with a wider stance, more muscular proportions, and a host of innovations that push the boundaries of performance. The moment you lay eyes on its seamless bodywork, featuring integrated door handles and a continuous rear light strip, it's clear this is a 911 thoroughly reimagined for the digital age while maintaining that unmistakable genetic code.</p>
+                                <p>Beneath its evolutionary styling lies a revolution in engineering. The 992 debuted with a turbocharged 3.0L flat-six engine producing 443 horsepower in Carrera S guise, later expanding to include the monstrous 640-hp Turbo S and the track-focused 502-hp GT3 with its screaming naturally aspirated 4.0L powerplant. Porsche introduced an eight-speed PDK dual-clutch transmission (replacing the seven-speed unit) and debuted an innovative Wet Mode that automatically adjusts driving dynamics when rain is detected. The interior represents the biggest leap forward, featuring a fully digital instrument cluster framed by a classic five-dial layout, while a 10.9-inch touchscreen infotainment system brings the 911 firmly into the modern era without sacrificing driver focus.</p>
+                                <p>What makes the 992 generation truly remarkable is how it balances its technological tour de force with pure driving exhilaration. The rear-wheel steering system, active aerodynamics, and advanced traction management work in harmony to deliver staggering performance numbers while remaining accessible to drivers of all skill levels. Yet for all its digital sophistication, the 992 retains that essential 911 magic – the way it communicates through the steering wheel, the intoxicating flat-six wail, and that sublime balance that makes every drive an event. With the introduction of hybrid technology imminent for the 911, the 992 may represent the last purely internal combustion generation, making it a significant milestone in Porsche's storied history. Whether carving canyon roads or dominating racetracks, the 992 proves that even after nearly 60 years, the 911 continues to set the standard for what a sports car can be.</p>
+                            </div>
+                            <div class="gen-card">
+                                <div class="card">
+                                    <img src="https://cdn.motor1.com/images/mgl/koEZkM/s1/2025-porsche-911-992.2-facelift.jpg" alt="Porsche 911 992">
+                                    <div class="gen-card-text">
+                                        <ul>
+                                            <li>Production Year: 2019-Present </li>
+                                            <li>Model Year: 2019-Present</li>
+                                            <li>Designer: Michael Mauer</li>
+                                            <li>Body Style: 2-door Coupe, Roadster, Targa</li>
+                                            <li>Layout: Rear-engine RWD/AWD</li>
+                                            <li>Engines: 3.0 L twin-turbocharged flat-6, 3.7 L twin-turbocharged flat-6, 4.0 L naturally aspirated flat-6, 3.6 twin-turbocharged flat-6 T-hybrid</li>
+                                            <li>Transmission:6-speed manual, 7-speed manual, 7-speed PDK, 8-speed PDK</li>
+                                            <li>Production: Still in production</li>
+                                            <li>Premiere: November 27 2018 at Porsche Experience Center Los Angeles</li>
+                                            <li>Market Launch: 2019(as a 2020 model)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                } else if (type === "718") {
+                    content = `
+                    <h3>Porsche 718 Generations</h3>
+                    <p>The Porsche 718 models are mid-engine sports cars that combine classic design with modern performance.
+                    They are lightweight, powerful, and built for the purest driving experience.</p>
+                    <div class="gen-section">
+                        <div class="gen-row">
+                            <div class="gen-text">
+                                <h2>Porsche Boxster 986(1996-2004)</h2>
+                                <p>The Porsche Boxster 986 marked a revolutionary chapter in Porsche's history as the brand's first modern mid-engine roadster and the car that saved the company in its darkest financial times. Designed as a more affordable, entry-level Porsche, the 986 brought the thrill of open-top motoring to a new generation of enthusiasts while staying true to the brand's performance DNA. Its sleek, curvaceous body, penned by legendary designer Harm Lagaay, featured a retractable soft top that stowed neatly under a clamshell rear deck, creating one of the most balanced and elegant profiles in Porsche's lineup. Underneath, its mid-mounted 2.5L flat-six engine (later 2.7L and 3.2L) delivered 201-258 horsepower, with perfect 50/50 weight distribution and razor-sharp handling that made it a joy to drive.</p>
+                                <p>The 986's impact went beyond just driving dynamics, it was a lifeline for Porsche. Developed during the company's financial struggles in the early 1990s, the Boxster's success (alongside its shared-platform sibling, the 996 911) helped fund Porsche's resurgence. Though early models faced criticism for their "fried egg" headlights (shared with the 996) and some cost-cutting interior materials, the 986 has since been reappraised as one of the purest driver's cars of its era. The Boxster S (3.2L, 250+ hp) and limited-run Boxster 550 Spyder edition paid homage to Porsche's racing heritage, while the car's inherent balance made it a favorite for amateur racers and autocrossers.</p>
+                                <p>Today, the 986 Boxster is celebrated as a modern classic, offering an affordable entry point into Porsche ownership with the same exhilarating driving experience that defines the brand. Its combination of lightweight construction, mid-engine layout, and open-top freedom has made it a beloved choice among enthusiasts, while its timeless design continues to turn heads. As the first step in Porsche's revival, the 986 Boxster remains a symbol of the brand's commitment to performance and driving pleasure.</p>
+                            </div>
+                            <div class="gen-card">
+                                <div class="card">
+                                    <img src="https://th.bing.com/th/id/R.e03df14dc5fddc3a8d3ff51894f6a4bf?rik=bEKYTULSnr0Vaw&pid=ImgRaw&r=0" alt="Porsche Boxster 986">
+                                    <div class="gen-card-text">
+                                        <ul>
+                                            <li>Production Year: 1996-2004</li>
+                                            <li>Model Year: 1996-2004</li>
+                                            <li>Designer: Grant Larson</li>
+                                            <li>Body Style: 2-door Roadster</li>
+                                            <li>Layout: Rear mid-engine, Rear-wheel drive</li>
+                                            <li>Engines: 2.5L, 2.7L, and 3.2L flat 6</li>
+                                            <li>Transmission: 5-speed manual, 6-speed manuak, 5-speed Tiptronic automatic</li>
+                                            <li>Premiere: Unveiled at the 1996 Geneva Motor Show</li>
+                                        <ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gen-row reverse">
+                            <div class="gen-text">
+                                <h2>Porsche Boxster 987/ Cayman 987c (2004-2012)</h2>
+                                <p>The Porsche 987 refined the Boxster/Cayman formula into one of the most balanced and driver-focused sports cars of its era. As the second generation of Porsche's mid-engine roadster and coupe, the 987 built upon the 986's success with sharper styling, more power, and a significantly upgraded interior—all while retaining the purity of engagement that made its predecessor so beloved. The design, still overseen by Harm Lagaay, traded the 986's rounded curves for more muscular haunches and cleaner lines, with traditional round headlights (a welcome return after the 986/996's controversial "fried egg" units). The cabin received higher-quality materials, better ergonomics, and Porsche's then-new Communication Management (PCM) infotainment system, giving the 987 a more premium feel.</p>
+                                <p>Under the hood, the base Boxster and Cayman started with a 2.7L flat-six (245 hp), while the S models packed a 3.2L (280-295 hp), both engines delivering linear power and an intoxicating exhaust note. The 987's mid-engine layout, combined with revised suspension geometry and optional Porsche Active Suspension Management (PASM), made it one of the best-handling cars on the road, with telepathic steering feedback and near-perfect balance. The 2009 facelift (987.2) brought direct injection, boosting power to 255 hp (base) and 310 hp (S), along with the debut of the PDK dual-clutch transmission—a first for the Boxster/Cayman line.</p>
+                                <p>The 987 also birthed some of the most thrilling variants in the model's history. The Cayman R (2011) stripped out weight (just 2,855 lbs) and added aggressive aerodynamics, while the Boxster Spyder (2010-2012) featured a lightweight manual soft top and a 320 hp 3.4L engine, becoming an instant collector's item. Today, the 987 is revered as the sweet spot of analog driving feel and modern reliability—a car that's engaging enough for purists yet refined enough for daily use. Its prices remain relatively accessible, but as enthusiasts rediscover its brilliance, its status as a future classic is all but guaranteed.</p>
+                            </div>
+                            <div class="gen-card">
+                                <div class="card">
+                                    <img src="https://cdn.elferspot.com/wp-content/uploads/2023/06/20/Porsche-987-Boxster-kaufen.jpeg" alt="Porsche Boxster 987">
+                                    <div class="gen-card-text">
+                                        <ul>
+                                            <li>Production Year: 2004-2012</li>
+                                            <li>Model Year: 2004-2012</li>
+                                            <li>Designer: Pinkau, Matthias Kulla</li>
+                                            <li>Body Style: 2-door Roadster(Boxster), 2-door Coupe(Cayman)</li>
+                                            <li>Layout: Rear mid-engine, Rear-wheel engine</li>
+                                            <li>Engines: 2.7L and 3.4L flat 6</li>
+                                            <li>Transmission: 5-speed manual, 6-speed manual, 5-speed Tiptronic automatic, 7-speed PDK</li>
+                                            <li>Premiere: Boxster unveiled in 2004; Cayman introduced in 2005</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gen-row">
+                            <div class="gen-text">
+                                <h2>Porsche Boxtster 981/ Cayman 981c (2012-2016)</h2>
+                                <p>The Boxster 981 represents the pinnacle of naturally aspirated mid-engine Porsche performance, a generation celebrated for its razor-sharp handling, sonorous flat-six engines, and near-perfect balance. As the third iteration of the Boxster and the second of the Cayman, the 981 debuted with a striking new design by Michael Mauer, featuring sculpted body lines, dramatic side intakes, and sleek LED lighting that gave it a more aggressive, sophisticated presence. The interior took a significant leap forward with higher-quality materials, a driver-focused cockpit, and Porsche's latest infotainment system—elevating the cabin to true premium status.</p>
+                                <p>Under the skin, the 981 introduced Porsche's new Modular Sports Car (MSB) platform, which improved rigidity while reducing weight. The base Boxster and Cayman came with a 2.7L flat-six (265 hp), while the S models packed a 3.4L (315-330 hp), both engines delivering instant throttle response, a soaring redline, and an exhaust note that remains one of the best in Porsche's history. The chassis tuning was nothing short of masterful, with precise steering, impeccable poise, and optional Porsche Torque Vectoring (PTV) enhancing its cornering prowess. The 2014 Cayman GTS and Boxster GTS further honed the formula with sport-tuned suspensions, enhanced exhaust systems, and subtle styling tweaks.</p>
+                                <p>The 981's crowning achievements, however, were the Cayman GT4 (2015-2016) and Boxster Spyder (2016)—two of the most driver-focused Porsches of the decade. The GT4, developed with Porsche's motorsport division, featured a 3.8L flat-six (385 hp) from the 911 Carrera S, a manual transmission, and a track-ready aerodynamics package. The Spyder, a lightweight roadster variant, shared the GT4's engine and offered a minimalist, open-air driving experience. Both are now highly sought-after by collectors.</p>
+                                <p>Today, the 981 generation is revered as the last of the naturally aspirated mid-engine Porsches, a swan song for an era of unfiltered driving joy. Its combination of analog feedback, timeless design, and thrilling performance ensures its place as a modern classic—one that will only grow in stature as the automotive world shifts toward electrification.</p>
+                            </div>
+                            <div class="gen-card">
+                                <div class="card">
+                                    <img src="https://www.stuttcars.com/wp-content/uploads/2021/10/Porsche-Boxster-981-The-Story.jpeg" alt="Porsche Boxster 981">
+                                    <div class="gen-card-text">
+                                        <ul>
+                                            <li>Production Year: 2012-2016</li>
+                                            <li>Model Year: 2012-2016</li>
+                                            <li>Designer: Pinkau, Matthia Kulla</li>
+                                            <li>Body Style: 2-door Roadster(Boxster), 2-door Coupe(Cayman)</li>
+                                            <li>Layout: Rear mid-engine, Rear-wheel drive</li>
+                                            <li>Engines: 2.7L and 3.4L flat 6</li>
+                                            <li>Transmission: 6-speed manual, 7-speed PDK</li>
+                                            <li>Premiere: Boxster unveiled at the 2012 Geneva Motor show; Cayman introduced at the 2012 Los Angeles Auto show</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gen-row reverse">
+                            <div class="gen-text">
+                                <h2>Porsche 982 - Branded as Porsche 718 (2016-Present)</h2>
+                                <p>The Porsche 982, known as the 718 Boxster and Cayman, marks a bold new chapter in Porsche's mid-engine legacy—one defined by turbocharged power, cutting-edge tech, and a renewed focus on precision driving. While its switch from naturally aspirated flat-sixes to turbocharged flat-fours initially sparked debate among purists, the 718 series has since silenced critics by delivering some of the most thrilling and capable mid-engine sports cars ever built.</p>
+                                <p>The 982 generation debuted with a controversial but necessary evolution: the replacement of the 981's beloved flat-six engines with new 2.0L and 2.5L turbocharged flat-fours (dubbed "718" in homage to Porsche's classic '50s and '60s racers). Though the change was driven by emissions regulations, the turbo engines brought shocking performance gains—the base 2.0L produced 300 hp, while the 2.5L in the GTS 4.0 later pumped out 365 hp, with explosive mid-range torque perfect for real-world driving. The 718's chassis, already near-perfect in the 981, was further refined with sharper steering, stiffer suspension, and optional Porsche Active Suspension Management (PASM) and Torque Vectoring (PTV).
+                                   What truly sets the 718 apart is its balance and agility. The mid-engine layout, combined with a low center of gravity, allows for near-telepathic handling and cornering prowess that few cars can match. The 718 Boxster and Cayman are equally at home on winding mountain roads or racetracks, with the latter offering a more focused driving experience thanks to its fixed roof and slightly stiffer chassis. The 718 Spyder and GT4 variants take performance to new heights, with naturally aspirated 4.0L flat-sixes (420 hp) and track-tuned suspensions that deliver an exhilarating driving experience.</p>
+                                   <p>The 718 generation stands as a bridge between Porsche’s analog past and its high-tech future. It proved that turbocharging could coexist with driving joy, while the GT4 RS and Spyder kept the naturally aspirated dream alive. With rumors of an electric 718 on the horizon, the 982 may be the last combustion-powered mid-engine Porsche—a fitting sendoff to an icon.</p>
+                            </div>
+                            <div class="gen-card">
+                                <div class="card">
+                                    <img src="https://images.finder.porsche.com/b3a27160-3fe9-40e9-9023-67cdf7265520/960" alt="Porsche 982">
+                                    <div class="gen-card-text">
+                                        <ul>
+                                            <li>Production Year: 2016-Present</li>
+                                            <li>Model Year: 2016-Present</li>
+                                            <li>Designer: Peter Varga(2015), Fabian Schmolz(GT4, 2018)</li>
+                                            <li>Body Style: 2-door Roadster(718 Boxster), 2-door fastback Coupe(718 Cayman)</li>
+                                            <li>Layout: Rear mid-engine, Rear-wheel drive</li>
+                                            <li>Engines: 2.0L Turbocharged flat-4, 2.5L Turbocharged flat-4, $.0L naturally aspirated flat-6</li>
+                                            <li>Transmission: 6-speed manual, 7-speed PDK dual-clutch automatic</li>
+                                            <li>Premiere: 718 Boxster introduced in January 2016; 718 Cayman unveiled in April 2016 at the Beijing Motor show.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                } else if (type === "panamera") {
+                    content = `
+                    <h3>About the Porsche Panamera Generations</h3>
+                    <p></p>
+                    <div class="gen-section">
+                        <div class="gen-row">
+                            <div class="gen-text">
+                                <h2>Porsche Panamera 970 - 2009 to 2016</h2>
+                                <p>The first generation Panamera, intoduced in 2009, marked a bold new chapter for Porsche. It was the brand's first attempt at a luxury four-door sedan, combining sports car performance with executive comfort. While the design initially stirred debate, the performance silenced critics. The Panamera offered a range of powertrains, froma naturally aspirated V6 to a roaring V8 in the Turbo model, and even a diesel variant in some markets. It featured both rear and all-wheel drive, along with advanced technologies like the PDK dual clutch transmission and adaptive air suspension. It carved out a niche for those who wanted a Porsche with daily practicality without sacrificing driving excitement. The introduction of the Panamera Hybrid also hinted at Porsche's future electric ambitions.</p>
+                            </div>
+                            <div class="gen-card">
+                                <div class="card">
+                                    <img src="https://th.bing.com/th/id/OIP.GABvY8GZMRhwFjDxr_F7lQHaEo?rs=1&pid=ImgDetMain" alt="Porsche 970 Classic">
+                                    <div class="gen-card-text">
+                                        <ul>
+                                            <li>Production Year: 2009 - 2016</li>
+                                            <li>Model Year: 2010 - 2016</li>
+                                            <li>Designer: Michael Mauer</li>
+                                            <li>Body Style: 5-door liftback sedan</li>
+                                            <li>Layout:Front-engine, rear-wheel drive/all wheel drive</li>
+                                            <li>Engines: 3.6L V6, 4.8L V8, 4.8L Turbo V8, 3.0L V6 diesel, 3.0L V6 hybrid</li>
+                                            <li>Transmission: 6-speed manual, 7-speed PDK dual-clutch, 8-speed automatic</li>
+                                            <li>Production: Leipzig, Germany</li>
+                                            <li>Premiere: 2009 Shanghai Auto Show</li>
+                                        <ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gen-row reverse">
+                            <div class="gen-text">
+                                <h2>Porsche Panamera 971 - 2016 to 2023</h2>
+                                <p>With the launch of the second-generation Panamera in 2016, Porsche addressed critiques of the first model's design, delivering a sleeker, sportier silhoutte  more in line with the 911's DNA. The platform was entirely re-engineered for better handling and ride quality, and the interior became more tech-forward with high-resolution touch displays and digital instrumentation. Performance was taken up several notches, especially with the introduction of the Panamera Turbo S E-Hybrid, an electrified powerhouse producing over 670 horsepower.
+                                    The lineup expanded to include variants like the luxurious Executive models and the practical-yet-sporty Sport Turismo, a shooting-brake-style wagon. This generation struck a perfect balance between dynamic performance, executive comfort, and modern innovation, proving that luxury sedan could truly feel like a Porsche.</p>
+                            </div>
+                            <div class="gen-card">
+                                <div class="card">
+                                    <img src="https://th.bing.com/th/id/R.2ef5b7b754d418623cae99383da725e7?rik=WVB4K6kJhrF15g&pid=ImgRaw&r=0" alt="Porsche Panamera 971">
+                                    <div class="gen-card-text">
+                                        <ul>
+                                            <li>Production Year: 2016 - 2023</li>
+                                            <li>Model Year: 2017 - 2023</li>
+                                            <li>Designer: Peter varga(exterior)</li>
+                                            <li>Body Style: 5-door liftback sedan,5-door Sport Turismo(wagon)</li>
+                                            <li>Layout:Front engine, all wheel drive/rear wheel drive</li>
+                                            <li>Engines: 2.9L V6, 3.0L V6, 4.0L V8, Plug-in hybrids (E-Hybrid and Turbo S E-Hybrid)</li>
+                                            <li>Transmission: 8 speed PDK dual clutch</li>
+                                            <li>Production: Leipzig, Germany</li>
+                                            <li>Premiere: June 2016 in Berlin</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gen-row">
+                            <div class="gen-text">
+                                <h2>Porsche Panamera 975 - 2023 to present</h2>
+                                <p>The third-generation Panamera, unveiled in 2023, continues to evolve as a high-tech, high-performance luxury sedan. While visually similar to its predecessor, the new model refines every detail with a sharper, more sculpted exterior and an even more luxurious and tech-rich interior. 
+                                    The cabin is dominated by Porsche's next-generation Driver Experience layout, incorporating curved digital displays, intuitive controls, and a focus on user-centric design. Electrification plays an even bigger role, with new and more efficient E-Hybrid systems offering extended electric-only driving and even greater total power outputs.
+                                    The Panamera Turbo E-Hybrid now leads the charge, showcasing Porsche's commitment to combining sustainable performance with everyday usability. This generation pushes the boundaries of what a modern grand tourer can be, blending luxury, sportiness and forward thinking technology into one compelling package.</p>
+                            </div>
+                            <div class="gen-card">
+                                <div class="card">
+                                    <img src="https://i2.res.24o.it/images2010/2023/11/AF1DzslB/images/28f1f8dc-8aa4-11ee-bcf9-e0e47900ab5c-fotohome0.jpg" alt="Porsche 975 Panamera">
+                                    <div class="gen-card-text">
+                                        <ul>
+                                            <li>Production Year: 2023 - present</li>
+                                            <li>Model Year: 2024 - present</li>
+                                            <li>Designer: Michael Mauer(Chief Design Officer)</li>
+                                            <li>Body Style: 5-door liftback sedan</li>
+                                            <li>Layout: Front engine, all wheel drive/rear wheel drive</li>
+                                            <li>Engines: Updated 2.9L V6, 4.0L V8, E-Hybrid variants.</li>
+                                            <li>Transmission: 8-speed PDK dual-clutch</li>
+                                            <li>Production:Leipzig, Germany</li>
+                                            <li>Premiere:November 24 2023</li>
+                                        <ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                }
+                document.getElementById("content-display").innerHTML = content;
+            }
+        </script>
+    </main>
+   
+    <footer>
+        <p>Follow Porsche on:</p>
+        <a href="https://www.facebook.com/porsche" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/porsche" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/porsche" target="_blank">Instagram</a>
+        <a href="https://www.pinterest.com/porsche" target="_blank">Pinterest</a>
+        <a href="https://www.youtube.com/porsche" target="_blank">Youtube</a>
+        <br>
+        <p>&copy; 2025 Porsche. All rights reserved. | <a href="#legal">Legal Services</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Porsche Website</title> 
+</head>
+<body>
+     <header class="header">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="images/Logo.jpg" alt="Porsche Logo" class="logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <form class="search-bar" onsubmit="return handleSearch(event)">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="motorsports.html">Motorsports</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">More
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="generations.html">Generations</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="login.html">Login</a>
+            <a href="sign.html">Sign Up</a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="text-title">
+            <h2> Meet the Porsche Macan</h2>
+        </div>
+        <p>Blending evryday practicality with unmistakable Porsche DNA, the Porsche Macan is the compact luxury SUV that redefines what it means to drive an SUV. first introduced in 2014, the Mcan brought the soul of a sports car into a family-friendly design, delivering thrilling perfomance, agile handling and refined comfort in one versatile package. 
+                Named after the Indonesian word for "tiger", the Macan lives up to its name with sharp reflexes, muscualr styling and a bold stance that commands the road. Whether you're cruising city streets, tackiling winding backroads, or loading up for a weekend escape, Macan proves that utility and driving pleasure don't have to be opposites, they can live in a perfect harmony. </p>
+
+        <div class="scrollable-container">
+            <div class="car-card">
+                <img src="https://i.pinimg.com/736x/50/ef/03/50ef03caea04b121484fd5228657d48d.jpg" alt="Top view of Macan">
+                <h3>Top View</h3>
+            </div>
+          
+            <div class="car-card">
+                <img src="https://cars.usnews.com/static/images/Auto/izmo/i158799855/2019_porsche_macan_frontview.jpg" alt="Macan front view">
+                <h3>Front View</h3>
+            </div>
+          
+            <div class="car-card">
+                <img src="https://files.porsche.com/filestore/image/multimedia/none/e3-2nd-cayenne-s-modelimage-sideshot/thumbwhite/14da0541-e03e-11ed-8101-005056bbdc38/porsche-thumbwhite.jpg" alt="Side view of macan">
+                <h3>Side View</h3>
+            </div>
+          
+            <div class="car-card">
+                <img src="https://img.freepik.com/premium-photo/porsche-macan-back-view-mockup_933496-71692.jpg" alt="rear view of macan">
+                <h3>Rear View</h3>
+            </div>
+        </div>
+
+        <div class="text">            
+            <p>Let's explore the dynamic Macan family:</p>
+        </div>
+
+        <div class="section" id="sectionMacan">
+            <h2>The Macan Family</h2>
+
+            <div id="section-nav">
+                <button onclick="showContent('variants')">Variants</button>
+                <button onclick="showContent('design')">Design</button>
+            </div>
+
+            <div id="content-display">
+                <p> click a button above to learn more about the Porsche Macan</p>
+            </div>
+        </div>
+
+        <script>
+            function showContent(type) {
+                let content = "";
+
+                if (type === "variants") {
+                    content = `
+                    <div class="porsche-grid">
+                        <div class="porsche-item">
+                            <img src="images/macan.jpg" alt="Porsche Macan">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche Macan Base</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Gasoline</li>
+                                <li>Turbocharged 2.0L engine Inline-4</li>
+                                <li>Torque: 295 lb-ft</li>
+                                <li>261 horsepower</li>
+                                <li>0-60 mph in 6.0s</li>
+                                <li>Top speed: 144 mph</li>
+                                <li>Fuel Type: Premium Unleaded Petrol(Super Plus 98 RON)</li>
+                                <li>Fuel Efficiency: 10.9L/km</li>
+                                <li>Brakes: Front:4-piston aluminium monobloc fixed calipers; 345 mm ventilated discs</li>
+                                <li>Rear: Single-piston floating calipers; 330 mm ventilated discs</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/macan_t.jpg" alt="Porsche Macan T">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche Macan T</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Gasoline</li>
+                                <li>2.0L turbocharged engine Inline-4</li>
+                                <li>Torque: 295lb-ft</li>
+                                <li>261 horsepower</li>
+                                <li>0-60 mph in 5.8s</li>
+                                <li>Top speed: 144 mph</li>
+                                <li>Fuel Type: Premium Unleaded Petrol(Super Plus 98 RON)</li>
+                                <li>Fuel Efficiency: 11.0L/100km</li>
+                                <li>Brakes: Front:4-piston aluminium monobloc fixed calipers; 345 mm ventilated discs</li>
+                                <li>Rear: Single-piston floating calipers; 330 mm ventilated discs</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/macan_s.jpg" alt="Porsche Macan S">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche Macan S</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Gasoline</li>
+                                <li>2.9L Twin Turbocharged V6</li>
+                                <li>Torque: 384lb-ft</li>
+                                <li>375 horsepower</li>
+                                <li>0-60 mph in 4.6s</li>
+                                <li>Top speed: 161 mph</li>
+                                <li>Fuel Type: Premium Unleaded Petrol</li>
+                                <li>Fuel Efficiency: 11.7L/100km</li>
+                                <li>Brakes: Front:6-piston aluminium monobloc fixed calipers; 350 mm ventilated discs</li>
+                                <li>Rear: Single-piston floating calipers; 330 mm ventilated discs</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/macan_gts.jpg" alt="Porsche Macan GTS">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche Macan GTS</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Gasoline</li>
+                                <li>2.9L Twin Turbocharged V6</li>
+                                <li>Torque: 406lb-ft</li>
+                                <li>434 horsepower</li>
+                                <li>0-60 mph in 4.3s</li>
+                                <li>Top speed: 169 mph</li>
+                                <li>Fuel Type: Premium Unleaded Petrol</li>
+                                <li>Fuel Efficiency: 12.2L/100km</li>
+                                <li>Brakes: Front:6-piston aluminium monobloc fixed calipers; 360 mm ventilated discs</li>
+                                <li>Rear: Single-piston floating calipers; 330 mm ventilated discs</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/macan_electric.jpg" alt="Porsche Macan Electric">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche Macan Electric</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Electric</li>
+                                <li>Torque: 479lb-ft</li>
+                                <li>265kW/355 horsepower</li>
+                                <li>0-60 mph in 5.4s</li>
+                                <li>Top speed: 137 mph</li>
+                                <li>Fuel Efficiency: Electric Range: 611km</li>
+                                <li>brakes: integrated regenrative braking system with smooth transition between regenerative and mechanical braking.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    `;
+                } else if (type === "design") {
+                    content = `
+                    <h3>The Exterior Design</h3>
+                    <p>The Porsche Macan brings Porsche performance and design into the compact SUV segment.
+                    Its sleek, athletic silhouette, coupe-like roofline, and bold front fascia distinguish it from the crowd.
+                    Despite its smaller footprint, the Macan captures the essence of Porsche DNA with every line and detail.</p>
+                    <ul>
+                        <li><span style="font-weight: bold;">Signature elements:</span> LED headlights with Porsche Dynamic Light System (PDLS), 3D LED rear light strip, and body-colored bumpers.</li>
+                        <li><span style="font-weight: bold;">Wheels:</span> 18" standard wheels, with options up to 21" in Macan GTS and Turbo variants, available in striking color-matched finishes.</li>
+                        <li><span style="font-weight: bold;">Sport Design Package:</span> Optional package includes unique front and rear fascia, side skirts, and blacked-out trims for a more aggressive look.</li>
+                        <li><span style="font-weight: bold;">Colors:</span> Available in vibrant shades like Python Green, Papaya Metallic, and Gentian Blue with contrasting black accents.</li>
+                    </ul>
+                    <p style="font-style: italic;">The Macan GTS stands out with black exterior details, a lower stance, and sport-tuned visual enhancements.</p>
+
+                    <div class="container mt-4">
+                        <div class="row text-center">
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://th.bing.com/th/id/OIP.a0KlPDHV3A0e6DhAvlmqPgHaEw?rs=1&pid=ImgDetMain" alt="Macan Front View" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">LED Headlights with PDLS</p>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://files.porsche.com/filestore/image/multimedia/none/e3-2nd-cayenne-s-modelimage-sideshot/thumbwhite/14da0541-e03e-11ed-8101-005056bbdc38/porsche-thumbwhite.jpg" alt="Macan Side Profile" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">Dynamic Side Contours with Sloping Roofline</p>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_675,q_auto:eco,w_1200/cms/uploads/yop47glupo78nrv3ubm1" alt="Macan Rear LED Strip" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">3D LED Rear Light Strip</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>The Interior Design</h3>
+                    <p>Inside the Macan, drivers are greeted with a focused yet luxurious cabin. The elevated center console and compact gear selector create a cockpit-like feel, while high-resolution digital displays and upscale materials ensure modern comfort.
+                    It's built to deliver driving pleasure without compromising on premium features.</p>
+                    <ul>
+                        <li><span style="font-weight: bold;">Driver-Centric Layout:</span> New digital instrument cluster, 10.9-inch touchscreen, and multifunction sports steering wheel.</li>
+                        <li><span style="font-weight: bold;">Seating:</span> 8-way comfort seats with optional 14-way adjustment and memory package or 18-way adaptive sports seats in GTS models.</li>
+                        <li><span style="font-weight: bold;">Trims:</span> Luxurious leather, Alcantara®, and carbon fiber options; ambient lighting for added ambiance.</li>
+                        <li><span style="font-weight: bold;">Optional upgrades:</span> BOSE® or Burmester® premium audio systems, heated rear seats, panoramic sunroof, and advanced climate control.</li>
+                    </ul>
+                    <p style="font-style: italic;">The Macan GTS includes exclusive interior accents in Carmine Red or Chalk, along with a Race-Tex roof lining and sport chrono stopwatch on the dash.</p>
+                    <div class="container mt-4">
+                        <div class="row text-center">
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://www.pff.de/wcf/attachment/911294-macan-cockpit-png/" alt="Macan Interior Console" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">Cockpit-Style Center Console</p>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://files.porsche.com/filestore/image/multimedia/none/macan3-comfort-seats-03/normal/9a0ea4ea-d8ad-11eb-80d9-005056bbdc38/porsche-normal.jpg" alt="Macan Sport Seats" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">18-Way Adaptive Sports Seats</p>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://carhex.de/wp-content/uploads/2021/12/porsche_macan_ambientebeleuchtung_nachruestung_gts_gtr_innenbeleuchtung_led_2-scaled.jpeg" alt="Macan Interior Ambient Lighting" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">Ambient Lighting & Modern Dash Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                } 
+                document.getElementById("content-display").innerHTML = content;
+            }
+        </script>
+    </main>
+    <div class="pagination">
+        <a href="porsche_cayenne.html" class="prev-btn">&laquo; Previous</a>
+
+        <div class="page-numbers">
+            <a href="porsche_718.html">1</a>
+            <a href="porsche_911.html">2</a>
+            <a href="porsche_cayenne.html">3</a>
+            <a href="porsche_macan.html" class="active">4</a>
+            <a href="porsche_panamera.html">5</a>
+            <a href="porsche_taycan.html">6</a> 
+        </div>
+
+        <a href="porsche_panamera.html" class="next-btn">Next &raquo;</a>
+    </div>
+    <footer>
+        <p>Follow Porsche on:</p>
+        <a href="https://www.facebook.com/porsche" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/porsche" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/porsche" target="_blank">Instagram</a>
+        <a href="https://www.pinterest.com/porsche" target="_blank">Pinterest</a>
+        <a href="https://www.youtube.com/porsche" target="_blank">Youtube</a>
+        <br>
+        <p>&copy; 2025 Porsche. All rights reserved. | <a href="#legal">Legal Services</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

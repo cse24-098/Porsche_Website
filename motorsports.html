@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Porsche Website</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Porsche Logo" class="logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <form class="search-bar" onsubmit="return handleSearch(event)">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="motorsports.html" class="active">Motorsports</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">More
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="generations.html">Generations</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="login.html">Login</a>
+            <a href="sign.html">Sign Up</a>
+        </div>
+    </nav>
+    <main>
+        <h2>Porsche Motorsport</h2>
+        <p>Step into a world where speed meets precision, where engineering dances with art, and where victory is more than just a finish line, it's a tradition. Porsche Motorsport isn't just a department or racing program. It's a pulse of the Porsche Brand. From the earliest sketched of Ferry Porsche to Hybrid rockets streaking across Le Mans today, motorsport is where Porsche proves itself, again and again.
+            When you talk about Porsche, youre not just talking about sports cars. You're talking about cars that bled on racetracks, that made history lap after lap. This is where Porsche becomes immortal, on tarmac, in the heat of competition, under teh banner of Porsche Motorsport.
+        </p>
+
+        <section>
+            <div>
+                <h5>Racing Heritage: Born to Compete</h5>
+                <p>It all started humbly. In 1951, justa few years after the birth of the Porsche brand, a small, lightweight Porsche 356 SL lined up or the grueling 24hours of Le Mans. It wasn't the biggest, its wasn't the loudest, but when it won its class a shock to the racing world and a promise of things to come. That win sparked a legacy.
+                    The 1950s and '60s saw Porsche refine the art of lightweight engineering. Cars like the Porsche 718 RS 60 and 904 Carrera GTS blended elegance with aggression. But it was in the 1970s that Porsche reached mythic status.
+                </p>
+                <p>When the Porsche 917 exploded onto the scene, it was both revolutionary and terrifying. Early versions were nearly undrivable, unstable at high speeds, yet Porsche persisted. Engineers stayed up for days, tinkering, testing, until the 917 became a beast tamed by science. In 1970, it roared to a historic overall victory at Le Mans, Porsche's first. The 917 would go on to dominate not just Le Mans, but the Can-Am series with over 1000 horsepower under its skin.
+                    As time moved on, Porsche never stopped innovating. The 956 and 962 became the face of Group C in the 80s, winning races around the world with advanced aerodynamics and ground effects. Porsche didnt chase trends, it set them. Each era of motorsport had a Porsche defining it. each car became a symbol , each race another chapter in a story still being written. 
+                </p>
+                <div class="porsche-grid">
+                    <div class="porsche-item">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5e67c0b15cc05f67605d7d5c/1628079005503-EN28357QDPFUHFUTZ5V6/porschesport.jpg" alt="Porsche 356 SL Le Mans">
+                    </div>
+                    <div class="porsche-item">
+                        <img src="https://th.bing.com/th/id/R.5c322416606719e6264aab6556f91b22?rik=MapMF4ROQTLL%2fg&riu=http%3a%2f%2fs3.amazonaws.com%2fscardigest%2fwp-content%2fuploads%2fPorsche-917-KH-Attwood.jpg&ehk=YZoGVnkNBWSJjzFPDqAstSuNxbuV2o%2fYu6vMHouk6ts%3d&risl=&pid=ImgRaw&r=0" alt="Porsche 917 Le Mans 1970"> 
+                    </div>
+                    <div class="porsche-item">
+                        <img src="https://th.bing.com/th/id/R.3192203a5372e625c5dbec945dab5897?rik=2yedxsacM7pUiA&pid=ImgRaw&r=0" alt="Porsche 956 Group C">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h5>Endurance Racing: Mastery of Time and Technology</h5>
+                <p>Endurance racing is unlike any other motorsport. It isn't about flat-out speed. It's a trial of reliability, strategy, teamwork and heart. And in this arena, Porsche is the undisputed master. The 24 Hours of Le Mans, the world's most brutal race, has witnessed Porsche's dominance again and again. 19 overall victories stand tall as a record no one has broken. But it's not just about the number. Its about how Porsche won.
+                    In 2015, Porsche unleashed the 919 Hybrid, a technological marvel with a turbocharged V4 engine and two energy recovery systems. While rivals struggled with new hybrid rules, Porsche thrived. The car wasn't just fast, it was intelligent. By 2017, it had secured three consecutive wins at Le Mans, dominating a new era of electrified endurance racing. but Porsche didn't stop there. In 2018, the evo - a no-holds-barred evolution of the race car - shattered the Nurburgring Nordschleife lap record, clocking a jaw-dropping 5:19:55.
+                    No traffic, co restrictions, just pure Porsche engineering unleashed. Endurance racing is where Porsche proves it's philosophy: every part matters, every second counts, and there are no shortcuts to greatness.  </p>
+                <div class="porsche-grid">
+                    <div class="porsche-item">
+                        <img src="https://th.bing.com/th/id/OIP.SYYJoNZObIQfCZfnK9HxSgHaE5?rs=1&pid=ImgDetMain" alt="Porsche 919 Hybrid Le Mans 2015">
+                        <h6>Porsche 919 Hybrid Le Mans</h6>
+                    </div>
+                    <div class="porsche-item">
+                        <img src="https://th.bing.com/th/id/R.488a61e6a3159bccccc06583e94485df?rik=I7BhM%2fCO3Gjv8g&pid=ImgRaw&r=0" alt="Porsche 919 Evo Nurburgring Record">
+                        <h6>Porsche 919 Evo Nurburgring Record</h6> 
+                    </div>
+                    <div class="porsche-item">
+                        <img src="https://cdn-2.motorsport.com/static/img/mgl/4300000/4320000/4322000/4322600/4322612/s8/lemans-24-hours-of-le-mans-2015-pit-stop-for-19-porsche-team-porsche-919-hybrid-nico-hulke.jpg" alt="Porsche 919 Pit Crew Le Mans">
+                        <h6>Porsche 919 Pit Crew Le Mans</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h5>Iconic Race Cars: Rolling Legends</h5>
+                <p>Here's a closer, deeper look at some of the titans of Porsche Motorsport:</p>
+                <ul>
+                    <li><span style="font-weight:bold;">Porsche 917</span>- Born from risk and refined through genius, the 917 is a car that changed Porsche's destiny. With it's 12-cylinder engine producing over 600 horsepower, the 917 wasn't just fast, it was violent.
+                        Drivers feared it. Fans worshipped it. When it finally won Le Mans in 1970 and 1971, it wasn't just a victory, it was a revolution. The 917 made Porsche a giant on the global stage.</li>
+                    <li><span style="font-weight:bold;">Porsche 935 "Moby Dick"</span> - Long, low and unmistakable, the 935 earned it's nickname for a reason. It's extended tail and wild aero design made it both bizarre and brilliant. It demolished the competition in the late 70s, with wins at Sebring, Daytona and even Le Mans(class). Moby Dick wasn't pretty but it was fearsome.</li>
+                    <li><span style="font-weight:bold;">Porsche 911 RSR</span>- The soul of Porsche in GT form. The RSR eveoled the iconic 911 into a race-ready masterpiece, competing in both WEC and IMSA cahmpionships. its flat-six howl, aggressive stance, and pinpoint handling have made it one of the most loved and feared GT cars on the planet.</li>
+                    <li><span style="font-weight:bold;">Porsche 919 Hybrid Evo</span> - A machine untethered. Free from racing regulations, this prototype pushed every limit, hybrid development, downforce, speed. It didnt just break the Nurburgring record. It obliterated it. The Evo is Porsche's "what if", a vision of perfection when the rulebook is thrown out.</li>
+                </ul>
+                <div class="porsche-grid">
+                    <div class="porsche-item">
+                        <img src="https://th.bing.com/th/id/R.4b6cff6ae497a0d91d37f20b57291c9b?rik=qJMqqXBSrqZ%2bZQ&riu=http%3a%2f%2fspeedhunters-wp-production.s3.amazonaws.com%2fwp-content%2fuploads%2f2013%2f09%2f12130006%2fPorsche_Moby_Dick_935-78-001-1200x750.jpg&ehk=MXf5TbebZXOVa5huhLe3QAZMM9hxLrf%2bxCJm5SgK3T0%3d&risl=&pid=ImgRaw&r=0" alt="Porsche Moby Dick Side View">
+                        <h6>The Porsche Moby Dick</h6>
+                    </div>
+                    <div class="porsche-item">
+                        <img src="https://th.bing.com/th/id/R.5c322416606719e6264aab6556f91b22?rik=MapMF4ROQTLL%2fg&riu=http%3a%2f%2fs3.amazonaws.com%2fscardigest%2fwp-content%2fuploads%2fPorsche-917-KH-Attwood.jpg&ehk=YZoGVnkNBWSJjzFPDqAstSuNxbuV2o%2fYu6vMHouk6ts%3d&risl=&pid=ImgRaw&r=0" alt="Porsche 917 Le Mans 1970"> 
+                        <h6>The Porsche 917</h6>
+                    </div>
+                    <div class="porsche-item">
+                        <img src="https://www.supercars.net/blog/wp-content/uploads/2018/06/porsche-motorsport-image-13.jpg" alt="Porsche 911 Race track">
+                        <h6>Porsche 919 RSR</h6>
+                    </div>
+                    <div class="porsche-item">
+                        <img src="https://i.redd.it/rkika0kj0rg21.jpg" alt="Porsche 919 Hybrid Evo">
+                        <h6>Porsche 919 Hybrid Evo</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h5>Racing Categories: Porsche in Every Arena</h5>
+                <p>Porsche is one of the few brands that competes in a variety of racing formats, from factory-backed prototypes to customer racing series:</p>
+                <ul>
+                    <li><span style="font-weight:bold;">FIA WEC(World Endurance Championship)</span> - Competing in both Hypercar and GTE Pro categories.</li>
+                    <li><span style="font-weight:bold;">IMSA WeatherTech SportsCar Championship</span> - The North American battle ground for Porsche in both GTD and GPT classes</li>
+                    <li><span style="font-weight:bold;">Formula E</span> - The cutting edge of electric racing. Porsche entered in 2019, pushing electric performance to new heights.</li>
+                    <li><span style="font-weight:bold;">Carrera Cup and Supercup</span> - One-make series that trains tomorrow's stars in identical 911 GT3 Cup Cars. </li>
+                    <li><span style="font-weight:bold;">Porsche Sprint Challenge</span> - A feeder series that's the launchpad for privateers and yound drivers aiming for global success.</li>
+                </ul>
+                <p>Wherever there's competiton, Porsche show's up and stands out.</p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h5>Engineering Philosophy: Built to Win, Born to Last</h5>
+                <p>Racing is Porsche's proving ground. Every turn of a wheel, every gigabyte of telemetry, feeds into Porsche's obsession with improvement. The knowledge gained on the track flows directly into the production line, in traction control, suspension design, hybrid  systems, even aerodynamics.
+                    When you drive a porsche, you're not just driving a roadcar. You're holding a piece of racing history shaped by decades of pain, glory and relentless testing.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Follow Porsche on:</p>
+        <a href="https://www.facebook.com/porsche" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/porsche" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/porsche" target="_blank">Instagram</a>
+        <a href="https://www.pinterest.com/porsche" target="_blank">Pinterest</a>
+        <a href="https://www.youtube.com/porsche" target="_blank">Youtube</a>
+        <br>
+        <p>&copy; 2025 Porsche. All rights reserved. | <a href="#legal">Legal Services</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

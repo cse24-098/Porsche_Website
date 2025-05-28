@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Porsche Website</title> 
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Porsche Logo" class="logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <form class="search-bar" onsubmit="return handleSearch(event)">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="motorsports.html">Motorsports</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">More
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="generations.html">Generations</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="login.html">Login</a>
+            <a href="sign.html">Sign Up</a>
+        </div>
+    </nav>
+    
+    <main>
+            <h2>The Story of Porsche: From Sketches to Speed Icons.</h2>
+    
+        <div class="text">
+            <p>Porsche’s story began in 1931, when Ferdinand Porsche, a brilliant Austrian engineer, founded Dr. Ing. h.c. F. Porsche GmbH in Stuttgart, Germany. Originally a design and consulting firm, it wasn’t intended to build cars. Yet Ferdinand’s work quickly changed the face of motoring—he designed the iconic Volkswagen Beetle, and earlier, the Auto Union Type 22, a revolutionary race car that helped define the era of the Silver Arrows.</p>
+            <p>Ferdinand dreamed of creating the perfect sports car, but World War II put that vision on hold. After the war, it was his son Ferry Porsche who brought the dream to life. Disappointed by the cars available at the time, Ferry famously said:</p>
+            
+            <blockquote>
+                “I looked around and couldn’t find the car I wanted. So I decided to build it myself.”
+            </blockquote>
+                
+            <p> 1948, in a small garage in Gmünd, Austria, he introduced the Porsche 356—a lightweight, rear-engine roadster that embodied the company’s new philosophy: “Simplify and add lightness.” It became the blueprint for everything Porsche would become.</p>      
+            <p>From those humble beginnings, the Porsche brand grew into a global symbol of performance, innovation, and design, with the legendary 911 soon becoming its most iconic model.</p>
+                
+        </div>
+        
+        <!--Porsche Founder-->
+        <div class="container my-5">
+            <div class="row align-items-center">
+              <!-- Carousel (Left Side) -->
+              <div class="col-md-6">
+                <div id="carouselFounder" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://th.bing.com/th/id/R.bf2f52210de813f83e78de01976c8f63?rik=8e7HmzQTalkhFA&riu=http%3a%2f%2fwww.5minutebiographies.com%2fwp-content%2fuploads%2f2014%2f07%2f940x681-ferdinand-porsche.jpg&ehk=Yr1GCeTBY%2fZzjxf4bCwJL2dklQ1PPHnobnLTizvcAoA%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="Ferdinand Porsche">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://th.bing.com/th/id/R.5e89a7381963ed10ba5d39d0f4f42b1c?rik=BN4k7WAWpbxb8w&riu=http%3a%2f%2fwww.autospies.com%2fimages%2fusers%2fAgent009%2fmain%2fporsche_476.jpg&ehk=zasejsxGH4egHDb7c%2b%2bXTAfzgXX3tqtYqda0lchS8hg%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="Ferdinand Porsche in Workshop">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://blog.abmpecas.com/wp-content/uploads/2023/05/Curiosidades-sobre-Ferdinand-Porsche.jpg" class="d-block w-100" alt="Ferdinand Porsche in Workshop">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselFounder" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselFounder" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+          
+              <!-- Text (Right Side) -->
+              <div class="col-md-6">
+                <div class="text-title">
+                    <h2>The Man Behind the Name:Ferdinand Porsche</h2>
+                </div>
+               <p>Meet Ferdinand Porsche, a man whose engineering genius shaped the future of both everyday vehicles and high-performance race cars. Before launching the Porsche brand, he designed the legendary Volkswagen Beetle and the fearsome Silver Arrow race cars of the 1930s.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!--The first porsche-->
+          <div class="container my-5">
+            <div class="row align-items-center flex-md-row-reverse">
+              <!-- Carousel (Right Side now) -->
+              <div class="col-md-6">
+                <div id="carousel356" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://flatsixes.com/wp-content/uploads/2017/04/1-356-001-4C.jpg" class="d-block w-100" alt="Porsche 356">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://th.bing.com/th/id/R.00d7be3224b72ee6181c9f626f13dc98?rik=1Fc9m5ebI4luDw&riu=http%3a%2f%2fautomotivehistory.org%2fwp-content%2fuploads%2f2023%2f06%2f1024px-Porsche_356_No._1_Roadster_IMG_0814.jpg&ehk=S0zuMMnjwfAziGLFTQ5IQGmgMd128%2fvtwsPt9hZlsXY%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="Classic Porsche 356 View">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.-YgKTEJvO7Xo7PX-FvY7mwHaE7?rs=1&pid=ImgDetMain" class="d-block w-100" alt="Classic Porsche 356 View">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel356" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel356" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+          
+              <!-- Text (Left Side) -->
+              <div class="col-md-6">
+                <div class="text-title">
+                  <h2>Porsche 356 – The First of Its Kind</h2>
+                </div>
+                <p>The Porsche 356 was the first car to carry the Porsche name. Built in 1948 by Ferdinand's son, Ferry Porsche, it featured a lightweight body, a rear-mounted engine, and a sleek, aerodynamic design. With only 40 horsepower, it wasn’t about raw speed—it was about balance, control, and the pure joy of driving.</p>
+              </div>
+            </div>
+          </div>
+
+          <!--the first 911-->
+          <div class="container my-5">
+            <div class="row align-items-center">
+              <!-- Carousel (Left Side) -->
+              <div class="col-md-6">
+                <div id="carousel911" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://tse1.mm.bing.net/th/id/OIP.4BZykhJ4MmpUxF5fhHYEwgHaEL?rs=1&pid=ImgDetMain" class="d-block w-100" alt="Ferdinand Porsche">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://mycarheaven.com/wp-content/uploads/2013/02/porsche_911_1963.jpg" class="d-block w-100" alt="Ferdinand Porsche in Workshop">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.secret-classics.com/wp-content/uploads/2020/09/porsche911turbostory-07.jpg" class="d-block w-100" alt="Ferdinand Porsche in Workshop">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://d2dsc1gf0t80gb.cloudfront.net/wp-content/uploads/2015/06/22233125/the-porsche-911-was-not-designed-around-its-rear-engine-1476933868845-640x628.jpg" class="d-block w-100" alt="Ferdinand Porsche in Workshop">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel911" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel911" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+          
+              <!-- Text (Right Side) -->
+              <div class="col-md-6">
+                <h2>Porsche 911 – A Legend Begins</style></h2>
+                <p>The first Porsche 911 was officially introduced at the 1963 Frankfurt Motor Show, and production began in 1964. It was originally called the Porsche 901, but due to a trademark dispute with Peugeot (who had rights to car names with a "0" in the middle), it was renamed the 911.</p>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col">
+                  <p>Designed by Ferdinand "Butzi" Porsche, the 911 featured a more powerful air-cooled flat-six engine. It produced about 130 horsepower and could reach 210 km/h, offering both power and smooth drivability.
+                  Unlike its predecessor, the 356, the 911 had a longer wheelbase, modern styling, and improved handling. It came with a 5-speed manual transmission and balanced rear-engine layout that gave it legendary driving dynamics.
+                  The 911 quickly became a symbol of German engineering and design. Its shape and spirit remain largely unchanged today — a true testament to the genius behind its original concept.</p>
+                  <p>The 911 was unique because it blended racing capabilities with everyday usability—it could dominate a racetrack and still be driven comfortably through city streets.
+                    What truly made the 911 legendary was its timeless design and the way it felt to drive—responsive, engaging, and balanced.
+                    This first generation laid the foundation for a lineage that would stretch for decades, with modern 911s still echoing the shape and soul of the 1964 original.</p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <!-- Left Image: 911 Rear Engine -->
+                <div class="col-md-6 text-center">
+                  <figure style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
+                    <img src="https://th.bing.com/th/id/R.6bfabf9bfa4fa8a9be2b961cadef714e?rik=KUuv8bZYwyWx9g&riu=http%3a%2f%2fwww.roadsmile.com%2fimages%2fporsche-930-turbo_engine_1.jpg&ehk=UpuSjWmqRzyjw2R4cyBt5F9NIlAwxpB0s4zKQk398JI%3d&risl=&pid=ImgRaw&r=0" class="img-fluid rounded" alt="911 Rear Engine">
+                    <figcaption class="mt-2"><strong>The Iconic 911 Rear Engine</strong></figcaption>
+                  </figure>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <figure style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
+                      <img src="https://car-images.bauersecure.com/wp-images/6770/1andyp911blogschematic.jpg" class="img-fluid rounded" alt="911 Rear Engine">
+                      <figcaption class="mt-2"><strong>The Iconic 911 Rear Engine</strong></figcaption>
+                    </figure>
+                </div>
+            </div>
+          </div>
+
+          <!--the racing world-->
+          <div class="container my-5">
+            <div class="row align-items-center flex-md-row-reverse">
+              <!-- Carousel (Right Side now) -->
+              <div class="col-md-6">
+                <div id="carouselRacingWorld" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://th.bing.com/th/id/R.60b5489e69967ce907cdd78aa0b85af2?rik=q6VeiixV8huqCA&riu=http%3a%2f%2fs3.amazonaws.com%2fscardigest%2fwp-content%2fuploads%2f1969-Porsche-917-3.jpg&ehk=MWd50qnMCnCfHiuJr9cb5xhMKNMrkwKLqcwNKfa9H74%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="Porsche 356">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://th.bing.com/th/id/R.2339ed451311d95055fbb171ecc95568?rik=MBmKZrQyFsIn2g&riu=http%3a%2f%2f3.bp.blogspot.com%2f-BepYuB341UU%2fUwSVVfymKAI%2fAAAAAAAAFOI%2fCIWYn8_2ToY%2fs1600%2fporsche-956c-02.jpg&ehk=ztc8BKK3YNZeU2kAQ96xrOTVy92EBTwQcMstrPY4IRM%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="Classic Porsche 356 View">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.motor1.com/images/mgl/JJ1JX/s1/2014-porsche-919-hybrid-showcar-for-sale.jpg" class="d-block w-100" alt="Classic Porsche 356 View">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://th.bing.com/th/id/R.2cb37e8995f0076cb134f8376c0b06a1?rik=hshExryi1w0OKQ&pid=ImgRaw&r=0" class="d-block w-100" alt="Classic Porsche 356 View">
+                  </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselRacingWorld" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselRacingWorld" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+          
+              <!-- Text (Left Side) -->
+              <div class="col-md-6">
+                <h2>Porsche in the racing world</h2>
+                <p>From the early days, racing has been at the core of Porsche’s identity. The company didn’t just build fast road cars — it built machines to dominate racetracks across the globe.
+                    Porsche entered motorsport officially in 1951, just three years after launching its first car. That year, a Porsche 356 SL won its class at the 24 Hours of Le Mans — the start of a legacy. But it was the 1960s and 70s that saw Porsche rise to racing royalty.</p>
+                <p>In 1970, Porsche shocked the motorsport world by winning its first overall victory at Le Mans with the legendary Porsche 917 — a car that could hit speeds over 380 km/h (240 mph). This success was followed by dominance in events like the Targa Florio, Nürburgring, Daytona, and Sebring. Throughout the decades, Porsche introduced race legends like:</p>
+                  <ul>
+                    <li>Porsche 956 & 962 – Dominated Group C endurance racing.</li>
+                    <li>911 RSR – Based on the road-going 911 but track-prepared.</li>
+                    <li>Porsche 919 Hybrid – A modern marvel that won Le Mans three times (2015–2017) and set a Nürburgring lap record.</li>
+                  </ul>
+            </div>
+          </div>
+
+          
+          <!--the first SUV-->
+          <div class="container my-5">
+            <div class="row align-items-center">
+              <!-- Carousel (Left Side) -->
+              <div class="col-md-6">
+                <div id="carouselSUV" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/e1dc9be4-2c13-4bc5-87f3-fdd530cf38f4/bed94551-6738-4314-a739-0d0bce04d709.png" class="d-block w-100" alt="Ferdinand Porsche">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://www.stuttcars.com/wp-content/uploads/2021/09/Porsche-Cayenne-2002-2007-5.png" class="d-block w-100" alt="Ferdinand Porsche in Workshop">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.carsized.com/resources/porsche/cayenne/d/2023/ra_295000000_porsche-cayenne-2023-rear-view_4x.png" class="d-block w-100" alt="Ferdinand Porsche in Workshop">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselSUV" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselSUV" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+          
+              <!-- Text (Right Side) -->
+              <div class="col-md-6">
+                <h2>Porsche's First SUV – The Cayenne</h2>
+                <p>When Porsche introduced the Cayenne in 2002, it wasn’t just unveiling a new model — it was changing the game.
+                  Known for building low-slung, precision sports cars like the 911, many fans were skeptical. 
+                  Why would a brand built on speed and elegance dive into the SUV market?
+                  But Porsche had a clear vision. They saw the rising popularity of SUVs in the U.S. and global markets, and they needed a way to grow financially without compromising performance. 
+                  The result? A high-performance, luxury SUV that could go off-road and outrun many sports cars
+                  The first-generation Cayenne (Type 955) was built in collaboration with Volkswagen and shared a platform with the VW Touareg. However, Porsche made sure the Cayenne had its own DNA — powerful engines, superior handling, and luxury fit for a Porsche badge.</p>
+              </div>
+            </div>
+          </div>
+
+          <!--the first electric car-->
+          <div class="container my-5">
+            <div class="row align-items-center flex-md-row-reverse">
+              <!-- Carousel (Right Side now) -->
+              <div class="col-md-6">
+                <div id="carouselTaycan" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://s1.cdn.autoevolution.com/images/news/gallery/porsche-taycan-production-milestone-celebrated-can-you-guess-how-many-have-been-made_6.jpg" class="d-block w-100" alt="Porsche 356">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://th.bing.com/th/id/R.29e0404a46967437d8a6b6192a87eba1?rik=boySA68BHrG8tw&riu=http%3a%2f%2fwww.dsf.my%2fwp-content%2fuploads%2f2018%2f06%2fporsche-taycan2.jpg&ehk=KarW7o2%2fbY%2bPAXNcGb857UAgrcKVppxADIV%2bPLHGIns%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="Classic Porsche 356 View">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://th.bing.com/th/id/R.f165e931ac2686753b72243ee7e1b23a?rik=K1ni8eWBzK5s%2fg&pid=ImgRaw&r=0" class="d-block w-100" alt="Classic Porsche 356 View">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselTaycan" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselTaycan" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+          
+              <!-- Text (Left Side) -->
+              <div class="col-md-6">
+                <h2>Porsche Taycan – The Electric Revolution Begins</h2>
+                <p>In 2019, Porsche made history by launching the Taycan, its first all-electric vehicle. 
+                  It wasn’t just a leap into the world of electric mobility—it was a statement that performance and sustainability could go hand in hand. 
+                  The name Taycan means "soul of a spirited young horse," a tribute to the horse in the Porsche crest.
+                  The Taycan debuted in two models: the Turbo and Turbo S, names that stirred conversation since they referenced forced induction—which electric cars don’t use. 
+                  Still, Porsche stuck with the naming convention as a nod to its heritage.
+                  With its sleek design, the Taycan looked like something straight out of the future:</p>
+                  <ul>
+                    <li>Fout-door sports saloon with low-slung, muscular lines.</li>
+                    <li>A curved digital cockpit inside.</li>
+                    <li>Features like over-the-air updates regenerative braking, and multiple driving modes.</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+        <p>Follow Porsche on:</p>
+        <a href="https://www.facebook.com/porsche" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/porsche" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/porsche" target="_blank">Instagram</a>
+        <a href="https://www.pinterest.com/porsche" target="_blank">Pinterest</a>
+        <a href="https://www.youtube.com/porsche" target="_blank">Youtube</a>
+        <br>
+        <p>&copy; 2025 Porsche. All rights reserved. | <a href="#legal">Legal Services</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

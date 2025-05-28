@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Porsche Website</title> 
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Porsche Logo" class="logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <form class="search-bar" onsubmit="return handleSearch(event)">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="motorsports.html">Motorsports</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">More
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="generations.html">Generations</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="login.html">Login</a>
+            <a href="sign.html">Sign Up</a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="text-title">
+            <h2>The Porsche Cayenne: Power, Luxury, and Everyday Versatility</h2>
+        </div>
+
+        <div class="text">
+            <p>When Porsche first launched the Cayenne in 2002, it redefined what an SUV could be. 
+                A Porsche not just in name, but in performance, precision, and passion, the Cayenne combined sports car dynamics with practical everyday usability. 
+                Today, the latest generation of the Cayenne family continues to push boundaries, blending cutting-edge technology, luxurious comfort, and breathtaking power into one irresistible package.</p>
+        </div>
+        <div class="scrollable-container">
+            <div class="car-card">
+                <img src="https://www.motorimagazine.it/wp-content/uploads/2023/04/porsche-cayenne-restyling.jpg" alt="Porsche Cayenne front view">
+                <h3>Front view</h3>
+            </div>
+          
+            <div class="car-card">
+                <img src="https://cars.usnews.com/static/images/Auto/izmo/i159614040/2021_porsche_cayenne_sideview.jpg" alt="Porsche Cayenne side view">
+                <h3>Side view</h3>
+            </div>
+          
+            <div class="car-card">
+                <img src="https://cars.usnews.com/static/images/Auto/izmo/i159614040/2021_porsche_cayenne_rearview.jpg" alt="Porsche Cayenne rear view">
+                <h3>rear view</h3>
+            </div>
+          
+            <div class="car-card">
+                <img src="https://media.zigcdn.com/media/model/2023/Mar/top-view-577711965_930x620.jpg" alt="Porsche Cayenne top view">
+                <h3>Top view</h3>
+            </div>
+        </div>
+
+        <div class="text">
+            <p>From the refined Cayenne to the electrified Cayenne E-Hybrid, and the athletic Cayenne S, every variant is engineered to offer a driving experience like no other. 
+                Whether you're seeking thrilling speed, intelligent efficiency, or a perfect balance of both, the Cayenne range delivers it — wrapped in unmistakable Porsche styling.</p>
+        </div>
+        <div class="text">
+            <p>Here's a closer look at some of the Cayenne family:</p>
+        </div>
+
+        <div class="section" id="sectionCayenne">
+            <h2>The Cayenne Family</h2>
+
+            <div id="section-nav">
+                <button onclick="showContent('variants')">Variants</button>
+                <button onclick="showContent('accessories')">Accessories</button>
+            </div>
+
+            <div id="content-display">
+                <p> click a button above to learn more about the porsche cayenne</p>
+            </div>
+        </div>
+
+        <script>
+            function showContent(type) {
+                let content = "";
+
+                if (type === "variants") {
+                    content = `
+                    <div class="porsche-grid">
+                        <div class="porsche-item">
+                            <img src="images/cayenne.jpg" alt="Porsche Cayenne">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche Cayenne Base</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Gasoline</li>
+                                <li>3.0L Turbocharged V6</li>
+                                <li>Torque: 368 lb-ft</li>
+                                <li>348 horsepower</li>
+                                <li>0-60 mph in 5.7s</li>
+                                <li>Top speed: 154 mph</li>
+                                <li>Fuel Type: Premium Unleaded Petrol</li>
+                                <li>Fuel Efficiency: 11.8L/100km</li>
+                                <li>Brakes: 4-piston aluminium monbloc fixed calipers; 350 mm ventilated discs</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/e_hybrid.jpg" alt="Porsche Cayenne E-Hybrid">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche Cayenne E-Hybrid</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Hybrid</li>
+                                <li>3.0L Turbocharged V6 paired with an electric motor </li>
+                                <li>Torque; 479lb-ft(combined)</li>
+                                <li>463 horsepower</li>
+                                <li>0-60 mph in 4.6s</li>
+                                <li>Top speed: 158 mph</li>
+                                <li>Fuel Type: Premium Petrol(Super Plus 98 RON)</li>
+                                <li>Fuel Efficiency: Electric range: 66-74km, Combined: 1.8L-1.5L/100km</li>
+                                <li>Brakes: Front:6-piston aluminium monobloc fixed calipers; 390 mm ventilated discs</li>
+                                <li>Rear: 4-piston aluminium monobloc fixed calipers; 358 mm ventilated discs</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/cayenne_s.jpg" alt="Porsche Cayenne S">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche Cayenne S</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Gasoline</li>
+                                <li>4.0L Twin Turbocharged V8</li>
+                                <li>Torque: 442lb-ft</li>
+                                <li>468 horsepower</li>
+                                <li>0-60 mph in 4.7s</li>
+                                <li>Top speed: 170 mph</li>
+                                <li>Fuel Type: Premium Unleaded Petrol</li>
+                                <li>Fuel Efficiency: 13.4L-12.4L/100km</li>
+                                <li>Brakes: Front:6-piston aluminium monobloc fixed calipers; 390 mm ventilated discs</li>
+                                <li>Rear: 4-piston aluminium monobloc fixed calipers; 330 mm ventilated discs</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/e_hybrid_coupe.jpg" alt="Cayenne E-Hybrid Coupe">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche Cayenne E-Hybrid Coupe</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Hybrid</li>
+                                <li>3.0L Turbocharged V6 paired with an Electric Motor</li>
+                                <li>Torque: 479lb-ft(Combined)</li>
+                                <li>463 horsepower</li>
+                                <li>0-60 mph in 4.6s</li>
+                                <li>Top speed: 158 mph</li>
+                                <li>Fuel Type: Premium Unleaded Petrol(Super Plus 98 RON)</li>
+                                <li>Fuel Efficiency: Electric range:66-74km, Combined:4.6-4.0L/100km</li>
+                                <li>Brakes: Front:6-piston aluminium monobloc fixed calipers; 390 mm ventilated discs</li>
+                                <li>Rear: 4-piston aluminium monobloc fixed calipers; 330 mm ventilated discs</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    `;
+                } else if (type === "accessories") {
+                    content = `
+                    <h3>The Exterior Design</h3>
+                    <p>The Porsche Cayenne merges luxury SUV practicality with unmistakable Porsche performance aesthetics.
+                        From its sculpted bonnet and bold front fascia to the wide LED tail light strip, the Cayenne carries a strong road presence.
+                        Its aerodynamic shape enhances efficiency while maintaining Porsche's iconic silhouette.</p>
+
+                    <ul>
+                        <li><span style="font-weight: bold;">Signature features:</span> LED Matrix headlights, Porsche Dynamic Light System Plus (PDLS+), full-width rear LED light bar, and an adaptive roof spoiler on Turbo variants.</li>
+                        <li><span style="font-weight:bold;">Wheel sizes:</span> Range from 19" to 22", with RS Spyder Design and Sport Classic wheels available for higher trims like the Cayenne Turbo GT.</li>
+                        <li><span style="font-weight:bold;">Body variants:</span> Available as the standard SUV, Coupé variant with a sleeker roofline, and the high-performance Turbo GT with a more aggressive stance.</li>
+                        <li><span style="font-weight:bold;">Sport Design Packages:</span> Optional exterior packages offer blacked-out trims, body-colored diffusers, and carbon fiber accents.</li>
+                    </ul>
+                    <p style="font-style: italic;">The Cayenne Coupé emphasizes a dynamic profile with its sloping rear roofline, quad exhaust tips, and integrated adaptive rear spoiler that extends at higher speeds.</p>
+
+                    <!-- Exterior Images -->
+                    <div class="container mt-4">
+                        <div class="row text-center">
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://cars.usnews.com/static/images/Auto/izmo/i5338/2016_porsche_cayenne_sideview.jpg" alt="Cayenne Side Profile" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">Wide, Muscular Stance</p>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://img.indianautosblog.com/2023/07/18/porsche-cayenne-headlight-elements-5aa3.jpg" alt="Cayenne LED Matrix Headlights" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">Matrix LED Headlights</p>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://i0.wp.com/imprintent.org/wp-content/uploads/2021/06/Porsche_Cayenne_Turbo_GT_05.jpg?w=1920&ssl=1" alt="Cayenne Turbo GT" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">Cayenne Coupé Turbo GT</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>The Interior Design</h3>
+                    <p>The Cayenne's interior combines luxury, technology, and Porsche's signature driver-focused layout.
+                        The elevated center console and high-resolution displays deliver both comfort and control.
+                        Rich material options, customizable ambient lighting, and advanced tech make every drive premium.</p>
+
+                    <ul>
+                        <li><span style="font-weight: bold;">Standard Displays:</span> 12.6-inch curved digital instrument cluster, 12.3-inch central PCM touchscreen, and optional 10.9-inch passenger display.</li>
+                        <li><span style="font-weight: bold;">Seating:</span> 8-way or optional 18-way adaptive sports seats with memory, massage, and ventilation functions in premium variants.</li>
+                        <li><span style="font-weight: bold;">Material Choices:</span> Leather, natural wood trims, carbon fiber, aluminum accents, and Porsche's Race-Tex microfiber options.</li>
+                        <li><span style="font-weight: bold;">Tech & Comfort:</span> Four-zone climate control, BOSE or Burmester 3D sound, ambient lighting, rear-seat entertainment, and wireless Apple CarPlay & Android Auto.</li>
+                    </ul>
+                    <p style="font-style: italic;">With its blend of high-tech and high-touch materials, the Cayenne interior turns every journey into a first-class experience, whether you're behind the wheel or in the backseat.</p>
+
+                    <!-- Interior Images -->
+                    <div class="container mt-4">
+                        <div class="row text-center">
+
+                            <div class="col-md-4 md-3">
+                                <img src="https://assets.adac.de/image/upload/c_scale,f_auto,t_16:9-default,w_1044/v1/ADAC-eV/KOR/Bilder/PR/fahrbericht-porsche-cayenne-e-hybrid-cockpit-1905_vl39ds" alt="Cayenne Cockpit" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">Advanced Porsche Driver Experience(Cayenne E-Hybrid)</p>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://configurator.porsche.com/model/2024/9YBAI1/common/detail_MQ1J_m_0.jpg" alt="Cayenne Luxury Seats" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">18-Way Sports Seats with Memory</p>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://i.gaw.to/content/photos/56/75/567594-le-porsche-cayenne-2024-en-mettra-plein-la-vue-a-l-interieur.jpeg" alt="Passenger Display" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">Passenger Infotainment Display</p>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                }
+                document.getElementById("content-display").innerHTML = content;
+            }
+        </script>
+    <div class="pagination">
+        <a href="porsche_911.html" class="prev-btn">&laquo; Previous</a>
+
+        <div class="page-numbers">
+            <a href="porsche_718.html">1</a>
+            <a href="porsche_911.html">2</a>
+            <a href="porsche_cayenne.html" class="active">3</a>
+            <a href="porsche_macan.html">4</a>
+            <a href="porsche_panamera.html">5</a>
+            <a href="porsche_taycan.html">6</a> 
+        </div>
+
+        <a href="porsche_macan.html" class="next-btn">Next &raquo;</a>
+    </div>
+    <footer>
+        <p>Follow Porschse on:</p>
+        <a href="https://www.facebook.com/porsche" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/porsche" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/porsche" target="_blank">Instagram</a>
+        <a href="https://www.pinterest.com/porsche" target="_blank">Pinterest</a>
+        <a href="https://www.youtube.com/porsche" target="_blank">Youtube</a>
+        <br>
+        <p>&copy; 2025 Porsche. All rights reserved. | <a href="#legal">Legal Services</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

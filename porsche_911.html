@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Porsche Website</title> 
+</head>
+<body>
+   <header class="header">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Porsche Logo" class="logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <form class="search-bar" onsubmit="return handleSearch(event)">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="motorsports.html">Motorsports</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">More
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="generations.html">Generations</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="login.html">Login</a>
+            <a href="sign.html">Sign Up</a>
+        </div>
+    </nav>
+    
+     <main>
+        <div class="text-title">
+            <h2> Explore the Porsche 911 lineup</h2>
+        </div>
+
+        <div class="text">
+            <p>The Porsche 911 is not just a car — it's an icon. Over decades, it has evolved without losing its soul. Today's 911s are faster, sharper, and more advanced, yet they stay true to the spirit of the very first 911 in 1964. Let's meet the legends that define this era of Porsche performance.</p>
+            <p>The Porsche engineers knew exactly what their objective was. To make the 911 Porsche the most powerful car for the road, objective achieved.
+            The water-cooled six cylinder by Tauber Boxster engine with four valve technology, Variable Turbine Geometry(VTG), delivers its power through the rear axle.
+            From its 3.6L capacity, it generates an enormous speed 620 horsepower at an egine speed of 6500RPM and 700 newton meters between 2250 and 5500RPM.</p>
+        </div>
+        <div class="scrollable-container">
+            <div class="car-card">
+                <img src="https://imgcdn.zigwheels.ph/large/gallery/exterior/27/229/porsche-911-turbo-s-top-view.jpg" alt="Porsche 911 top view ">
+                <h3>top view</h3>
+            </div>
+          
+            <div class="car-card">
+                <img src="https://th.bing.com/th/id/R.4648401f16c64be89467768b7eb3e72c?rik=gUF1QH5j3xKFLw&riu=http%3a%2f%2fimages.hgmsites.net%2flrg%2f2011-porsche-911-2-door-coupe-carrera-front-exterior-view_100338897_l.jpg&ehk=OEhHilqA52liZumTW2NsgRSPfW4w%2fFysCSFSUkdQmsQ%3d&risl=&pid=ImgRaw&r=0" alt="Porsche 911 Front view">
+                <h3>front view</h3>
+            </div>
+          
+            <div class="car-card">
+                <img src="https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXuBuNXdMGF4tl3U0%25z8rMH1spMBvMZq6G5OtgSv31nBJaA4qh4NSEGewirQ91wRmWBi2Ow7gVdc0BtUlhDfzE0spAnPdBuiZJyNydlctBvoZ9nf8dXFWs6a%25JsewTRmWBiChf7gVdcF41UlSjv8cqnjYqZl%25btuV0iDRrpKmhE8gfE4" alt="Porsche 911 side view">
+                <h3>side view</h3>
+            </div>
+          
+            <div class="car-card">
+                <img src="https://th.bing.com/th/id/R.126e6629bc507082ca36cac7219e5686?rik=2h2ewMZ%2bL5nPqA&riu=http%3a%2f%2fst.automobilemag.com%2fuploads%2fsites%2f10%2f2016%2f05%2f2017-porsche-911-carrera-s-coupe-rear-view.png&ehk=JgmijFHdm4TvzLZdKFXKmHDWqW%2bsr17yeOGdjsrZ0Cw%3d&risl=&pid=ImgRaw&r=0" alt="Porsche 911 rear view">
+                <h3>rear view</h3>
+            </div>
+          
+            <div class="car-card">
+                <img src="https://th.bing.com/th/id/OIP.pNs8lqxnM0gQfLKogUiufgHaFj?w=640&h=480&rs=1&pid=ImgDetMain" alt="Porsche 911 3/4 side view">
+                <h3>3/4 side view</h3>
+            </div>
+        </div>
+        <div class="text">
+            <p>The Porsche 911 is more than just a single car — it's a full family of legends.  
+            Each variant of the 911 is crafted for a different kind of driving passion:  
+            from the luxurious rocket that is the Turbo S, to the high-revving thrill of the GT3, and the track-dominating power of the GT3 RS.  
+            There's a 911 for every kind of dream.</p>
+        
+            <p>Let's dive into some of the most iconic members of the 911 family:</p>
+        </div>
+
+        
+        <div class="section" id="section911">
+            <h2>The 911 Family</h2>
+
+            <div id="section-nav">
+                <button onclick="showContent('variants')">Variants</button>
+                <button onclick="showContent('design')">Design</button>
+            </div>
+
+            <div id="content-display">
+                <p> click a button above to learn more about the Porsche Taycan</p>
+            </div>
+        </div>
+
+        <script>
+            function showContent(type) {
+                let content = "";
+
+                if (type === "variants") {
+                    content = `
+                    <div class="porsche-grid">
+                        <div class="porsche-item">
+                            <img src="images/carrera.jpeg" alt="Carrera" class="porsche-item-img">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche 911 Carrera</li>
+                                <li style="list-style: none; font-weight: bold;">Price: P100 000</li>
+                                <li>Gasoline</li>
+                                <li>Twin Turbocharged 3.0L engine Flat-6</li>
+                                <li>Torque: 331 lb-ft</li>
+                                <li>388 horsepower</li>
+                                <li>0-60 mph in 4s</li>
+                                <li>Top speed: 183 mph</li>
+                                <li>Fuel Type: Premium Unleaded Petrol(Super Plus 98 RON)</li>
+                                <li>Fuel Efficiency: 9.4L/100km</li>
+                                <li>Brakes: Porsche Ceramic Composite Brakes(PCCB)</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/turbo_s.jpeg" alt="Turbo S" class="porsche-item-img">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche 911 Turbo S</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Gasoline</li>
+                                <li>3.8L Twin Turbocharged engine Flat-6</li>
+                                <li>Torque; 390lb-ft</li>
+                                <li>640 horsepower</li>
+                                <li>0-60 mph in 2.6s</li>
+                                <li>Top speed: 205 mph</li>
+                                <li>Fuel Type: Premium Unleaded Petrol</li>
+                                <li>Fuel Efficiency:12.0L-12.3L/100km </li>
+                                <li>Brakes: Porsche Ceramic Composite Brakes(PCCB)</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/gt3.jpeg" alt="Porsche 911 GT3" class="porsche-item-img">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche 911 GT3 </li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Gasoline</li>
+                                <li>4.0L Naturally Aspirated Flat-6</li>
+                                <li>Torque: 346lb-ft</li>
+                                <li>502 horsepower</li>
+                                <li>0-60 mph in 3.2s</li>
+                                <li>Top speed: 193 mph</li>
+                                <li>Fuel Type: Premium Unleaded Petrol (Super Plus 98 RON)</li>
+                                <li>Fuel Efficiency: 13.9L/100km</li>
+                                <li>Brakes: Porsche Ceramic Composite Brakes(PCCB)</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/gt3_rs.jpg" alt="Porsche 911 GT3 RS" class="porsche-item-img">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche 911 GT3 RS</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Gasoline</li>
+                                <li>4.0L Natuarlly Aspirated Flat-6 </li>
+                                <li>Torque: 343lb-ft</li>
+                                <li>518 horsepower</li>
+                                <li>0-60 mph in 3.0s</li>
+                                <li>Top speed: 184 mph</li>
+                                <li>Fuel Type: Unleaded Petrol</li>
+                                <li>Fuel Efficiency: 14.4L/100km</li>
+                                <li>Brakes: Porsche Ceramic Composite Brakes(PCCB)</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/spirit.jpg" alt="Porsche Spirit 70" class="porsche-item-img">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche Spirit 70</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Gasoline</li>
+                                <li>3.0L Twin Turbocharged Flat-6</li>
+                                <li>Torque: 390lb-ft</li>
+                                <li>450 horsepower</li>
+                                <li>0-60 mph in 3.0s</li>
+                                <li>Top speed: 194 mph</li>
+                                <li>Fuel type: Premium Unleaded Petrol</li>
+                                <li>Fuel Efficiency: 12.8L/100km</li>
+                                <li>Brakes: Porsche Ceramic Composite Brakes (PCCB)</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/cabriolet.jpg" alt="911 Carrera T Cabriolet" class="porsche-item-img">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche 911 Carrera T Cabriolet</li>
+                                <li style="list-style: none; font-weight: bold;">Price: P1 850 000(approximate)</li>
+                                <li>Gasoline</li>
+                                <li>Twin Turbocharged 3.0L engine Flat-6</li>
+                                <li>Torque: 332 lb-ft</li>
+                                <li>385 horsepower</li>
+                                <li>0-60 mph in 4.3s</li>
+                                <li>Top speed: 180 mph</li>
+                                <li>Fuel Type: Premium Unleaded Petrol</li>
+                                <li>Fuel Efficiency: 10.5L/100km</li>
+                                <li>Brakes: Porsche Ceramic Composite Brakes(PCCB)</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/911_targa_4_gts.jpg" alt="911 Targa 4 GTS" class="porsche-item-img">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche 911 Targa 4 GTS</li>
+                                <li style="list-style: none; font-weight: bold;">Price: P2 400 000</li>
+                                <li>Gasoline</li>
+                                <li>Twin Turbocharged 3.0L engine Flat-6</li>
+                                <li>Torque: 420 lb-ft</li>
+                                <li>480 horsepower</li>
+                                <li>0-60 mph in 3.5ss</li>
+                                <li>Top speed: 191 mph</li>
+                                <li>Fuel Type: Premium Unleaded Petrol</li>
+                                <li>Fuel Efficiency: 10.8L/100km</li>
+                                <li>Brakes: Porsche Ceramic Composite Brakes(PCCB)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    `;
+                } else if (type === "design") {
+                    content = `
+                    <h3>The Extrior Design</h3>
+                        <p>The Porsche 911 stands as an icon of automotive design, seamlessly blending heritage with aerodynamic function. Its unmistakable silhouette — sloping roofline, wide rear stance, and signature round headlights — has evolved over decades while retaining its original spirit. Each variant, from the Carrera to the GT3 RS, brings purposeful enhancements.</p>
+                    <ul>
+                        <li><span style="font-weight: bold;">Signature features:</span>Iconic oval LED headlights, active rear wing, sculptured side intakes (on Turbo models), and integrated LED light strip across the rear.</li>
+                        <li><span style="font-weight:bold;">Wheel sizes:</span> 19" - 21" staggered alloy wheels with performance tires, unique designs for Carrera, Turbo and GT trims.</li>
+                        <li><span style="font-weight:bold;">Roof designs:</span> Carbon fiber air ducts, large rear wings for downforce, front splitter, center-lock wheels.</li>
+                        <li><span style="font-weight:bold;">Bold choices like shark Blue, racing Yellow, Python Green, or the classic Guards Red.</li>
+                    </ul>
+                    <p style="font-style: italic;">The GT3 RS turns the 911 into a track ready machine with widebody flares, aggressive aero kits and vented fenders for better cooling and perfomance.</p>
+                    
+                    <div class="container mt-4">
+                        <div class="row text-center">
+                            
+                            <div class="col-md-4 mb-3">
+                                <img src="https://img.goodfon.com/wallpaper/big/f/70/porsche-911-gt3-rs-weissach-package-porsche-911-rear-wing.jpg" alt="Porsche GT3 RS Wing" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">Massive Fixed Wing</p>
+                            </div>
+                            
+                            <div class="col-md-4 mb-3">
+                                <img src="https://th.bing.com/th/id/R.4b878929b3adba5c7f488796b71f96a3?rik=0yazg%2fug%2fhJC%2fQ&riu=http%3a%2f%2fextremedimensions.com%2fimages%2fT%2f109629_2.jpg&ehk=npUjQI%2frjdQlgi6gK6D4locWKWMGSSgczRDdHs6lNpU%3d&risl=&pid=ImgRaw&r=0" alt="Porsche Ovel Headlights" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">Low, Wide Nose with Oval LED Headlights</p>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://th.bing.com/th/id/OIP.KgdaAdELPrdQOHlDUTFVFAHaEK?rs=1&pid=ImgDetMain" alt="Porsche Side Profile" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">Rear Light Bar and Active Spoiler</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h3>The Interior Design</h3>
+                    <p>The 911's interior blends sport-focused ergonomics with premium materials and digital refinement. Everything is within driver reach — from the start button on the left (a Porsche tradition) to the angled touchscreen and digital driver displays. It feels like a cockpit, not just a cabin.</p>
+                    <ul>
+                        <li><span style="font-weight: bold;">Standard Displays:</span>5 digital instrument displays surrounding a central analog tachometer, plus a 10.9-inch Porsche Communication Management (PCM) touchscreen with Apple CarPlay and Android Auto.</li>
+                        <li><span style="font-weight: bold;">Seats:</span> Standard sport seats with optional 18-way adaptive sports seats or lightweight carbon-fiber bucket seats (GT models).</li>
+                        <li><span style="font-weight: bold;">Brushed aluminum, leather, optional carbon fiber or Race-Tex surfaces, and personalized contrast stitching.</li>
+                        <li><span style="font-weight: bold;">Optional extras:</span>Bose or Burmester surround audio systems, ambient lighting, wireless charging, and dual-zone automatic climate control.</li>
+                    </ul>
+                    <p style="font-style:italic;">In GT models, every detail, from the steering wheel to the shift paddles, is built for track precision without sacrificing the luxury touch Porsche is known for.</p>
+
+                    <!-- Interior Images -->
+                    <div class="container mt-4">
+                        <div class="row text-center">
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://i.pinimg.com/originals/c0/5c/da/c05cdabf347e2c8ef7f4278918dd70d9.jpg" alt="911 dashboard" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">Sporty 911 Dashboard with Central Tachometer</p>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://di-uploads-pod3.dealerinspire.com/porscheoffremont/uploads/2019/09/Porsche-911-seats.jpg" alt="GT3 RS Bucket Seats" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">Sport Bucket Seats(GT3 RS)</p>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <img src="https://carhex.de/wp-content/uploads/2024/06/porsche_911_992_ambientebeleuchtung_led_innenraum_carrera_gt3_gts_nachruestung_3-scaled.jpg" alt="911 Ambient Lighting" class="img-fluid rounded shadow-sm">
+                                <p class="mt-2">Premium Materials and Ambient Lighting</p>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                }
+                document.getElementById("content-display").innerHTML = content;
+            }
+        </script>
+    </main>
+    <div class="pagination">
+        <a href="porsche_718.html" class="prev-btn">&laquo; Previous</a>
+        <div class="page-numbers">
+            <a href="porsche_718.html">1</a>
+            <a href="porsche_911.html" class="active">2</a>
+            <a href="porsche_cayenne.html">3</a>
+            <a href="porsche_macan.html">4</a>
+            <a href="porsche_panamera.html">5</a>
+            <a href="porsche_taycan.html">6</a> 
+        </div>
+
+        <a href="porsche_cayenne.html" class="next-btn">Next &raquo;</a>
+    </div>
+    <footer>
+        <p>Follow Porsche on:</p>
+        <a href="https://www.facebook.com/porsche" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/porsche" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/porsche" target="_blank">Instagram</a>
+        <a href="https://www.pinterest.com/porsche" target="_blank">Pinterest</a>
+        <a href="https://www.youtube.com/porsche" target="_blank">Youtube</a>
+        <br>
+        <p>&copy; 2025 Porsche. All rights reserved. | <a href="#legal">Legal Services</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

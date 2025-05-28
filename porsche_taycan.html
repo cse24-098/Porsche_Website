@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Porsche Website</title> 
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Porsche Logo" class="logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <form class="search-bar" onsubmit="return handleSearch(event)">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="motorsports.html">Motorsports</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">More
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="generations.html">Generations</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="login.html">Login</a>
+            <a href="sign.html">Sign Up</a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="text-title">
+            <h2>The Porsche Taycan: The Future of Electric Performance</h2>
+        </div>
+
+        <div class="text">
+            <p>The Porsche Taycan marks a bold leap into the electric era, redefining what it means to drive a sports car. 
+                With the unmistakable DNA of Porsche coursing through its electric veins, the Taycan fuses breathtaking acceleration, cutting-edge technology, and emotional design into a singular, unforgettable experience.</p>
+        </div>
+
+        <div class="scrollable-container">
+            <div class="car-card">
+                <img src="https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXkBuNYdMGF4tl3U0%25z8rMHDspMBvMZq6G5OtySv31nBJaA4qh4NSEGkaW%25cz91wxuzbUUdMGLqk0D3LF%25vUqHbmuWXsO0MReV6iTmsizhRc2hGYqA7fQAI0OJUPYJTqTBsN5BzN2dioCP3JQDcFGNhXYnfuro4N5yPeweBFCvNzxzF6GXoq1qgur6FObydwwRuT06sqx7e2HaWK1UzQKhefbsqYS14v0iO5Mbq5HcTCkaJbKf2GLmHCSPQrIg2nMNYw3uhdko5xjer1UBXCfHaYXZaijh1hYCh0Qw9sJRzPf7KZ" alt="top view">
+                <h3>Top View</h3>
+            </div>
+          
+            <div class="car-card">
+                <img src="https://th.bing.com/th/id/OIP.542zeXS4LRqaEhQgKMpSlQHaFN?rs=1&pid=ImgDetMain" alt="front view">
+                <h3>Front View</h3>
+            </div>
+          
+            <div class="car-card">
+                <img src="https://th.bing.com/th/id/R.f258bbf74b05715cf15fd81c809170a3?rik=HAuV6t%2bhcUmLWA&pid=ImgRaw&r=0" alt="side view">
+                <h3>Side View</h3>
+            </div>
+          
+            <div class="car-card">
+                <img src="https://th.bing.com/th/id/R.f4d8f941dc62efe503c134dca700129d?rik=eHvBwQ6NpyWviw&pid=ImgRaw&r=0" alt="rear view">
+                <h3>Rear View</h3>
+            </div>  
+        </div>
+    
+        <div class="text">
+            <p>First unveiled in 2019, the Taycan shattered expectations — proving that sustainability doesn't mean sacrificing thrill.
+                From its innovative 800-volt architecture to its electrifying launch capabilities, the Taycan stands as a masterpiece of engineering and ambition.</p>
+        </div>
+        <div class="text">    
+            <p>Whether you prefer the poised dynamics of the Taycan 4, the enhanced thrill of the Taycan 4S, or the razor-sharp focus of the Taycan GTS, each variant delivers a driving sensation that's uniquely Porsche, but with an electric twist.
+                The Taycan isn't just the future — it's happening now.</p>
+        </div>
+
+        <div class="text">
+            <p> Take a look at the facinatinating Taycan variants </p>
+        </div>
+
+        <div class="section" id="sectionTaycan">
+            <h2>The Taycan Family</h2>
+
+            <div id="section-nav">
+                <button onclick="showContent('variants')">Variants</button>
+                <button onclick="showContent('design')">Design</button>
+            </div>
+
+            <div id="content-display">
+                <p> click a button above to learn more about the Porsche Taycan</p>
+            </div>
+        </div>
+
+        <script>
+            function showContent(type) {
+                let content = "";
+
+                if (type === "variants") {
+                    content = `
+                    <div class="porsche-grid">
+                        <div class="porsche-item">
+                            <img src="images/taycan_base.jpg" alt="Porsche Taycan">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche Taycan Base</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Electric</li>
+                                 <li>Electirc consumption: Approximately 15.1kWh/100km</li>
+                                <li>Torque: 254 lb-ft</li>
+                                <li>300kw or 402 horsepower</li>
+                                <li>0-60 mph in 4.5s</li>
+                                <li>Top speed: 143 mph</li>
+                                <li>Brakes: Porsche Surface Coated Brakes (PSCB) with 410 mm front and 365 mm rear discs</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/taycan_4.jpg" alt="Porsche Taycan 4">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche Taycan 4</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Electric</li>
+                                <li>Electirc consumption: Approximately 15.1kWh/100km</li>
+                                <li>Torque: 368lb-ft</li>
+                                <li>300kW or 402 horsepower</li>
+                                <li>0-60 mph in 4.4s</li>
+                                <li>Top speed: 143 mph</li>
+                                <li>Brakes: Porsche Surface Coated Brakes (PSCB)</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/taycan_4s.jpg" alt="Porsceh Taycan 4S">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche Taycan 4S</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Electric</li>
+                                <li>Electirc consumption: Approximately 17.6-20.2 kWh/100km</li>
+                                <li>Torque: 472lb-ft</li>
+                                <li>400kW or 536 horsepower</li>
+                                <li>0-60 mph in 3.5s</li>
+                                <li>Top speed: 155 mph</li>
+                                <li>Brakes: Porsche Surface Coated Brakes (PSCB)</li>
+                            </ul>
+                        </div>
+
+                        <div class="porsche-item">
+                            <img src="images/taycan_gts.jpg" alt="Porsche Taycan GTS">
+                            <ul>
+                                <li style="list-style: none; font-weight: bold;">Porsche Taycan GTS</li>
+                                <li style="list-style: none; font-weight: bold;" >Price: P100 000</li>
+                                <li>Electric</li>
+                                <li>Electric Consumption: Approximately 20.3-21.2kWh/100km</li>
+                                <li>Torque: 626lb-ft</li>
+                                <li>515kW or 690 horsepower</li>
+                                <li>0-60 mph in 3.1s</li>
+                                <li>Top speed: 155 mph</li>
+                                <li>Brakes:Brakes: Porsche Surface Coated Brakes (PSCB)</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    `;
+                } else if (type === "design") {
+                    content = `
+                        <h3>The Exterior Design</h3>
+                        <p>The Porsche Taycan showcases a visionary electric future without compromising Porsche heritage. Its sleek silhouette, low-slung front, and flowing contours create a futuristic yet familiar look. Designed for aerodynamic efficiency and visual impact, the Taycan is both a performance machine and a design icon.</p>
+                        <ul>
+                            <li><span style="font-weight: bold;">Signature elements:</span> Four-point LED matrix headlights, sculpted front apron, retractable door handles, and a full-width rear light bar with Porsche logo in glass.</li>
+                            <li><span style="font-weight: bold;">Wheels:</span> Standard 19" Aero wheels; optional up to 21" with Mission E-inspired design, optimizing range and airflow.</li>
+                            <li><span style="font-weight: bold;">Aerodynamics:</span> A drag coefficient of just 0.22, with adaptive rear spoiler and air curtains integrated into the front fascia.</li>
+                            <li><span style="font-weight: bold;">Paint options:</span> Exclusive colors like Frozen Blue Metallic, Ice Grey, Neptune Blue, and Volcano Grey highlight the Taycan's futuristic form.</li>
+                        </ul>
+                        <p style="font-style: italic;">The Taycan Turbo and Turbo S variants include enhanced body detailing, sportier front and rear diffusers, and signature 'Turbo' badging even in the absence of a combustion engine.</p>
+
+                        <!-- Exterior Images -->
+                        <div class="container mt-4">
+                            <div class="row text-center">
+
+                                <div class="col-md-4 mb-3">
+                                    <img src="https://th.bing.com/th/id/R.52000dd634aeef4a9af8f68928e646fa?rik=ldG8Hg0gFpTqNg&pid=ImgRaw&r=0" alt="Taycan Front View" class="img-fluid rounded shadow-sm">
+                                    <p class="mt-2">Four-Point LED Headlights and Aerodynamic Front Apron</p>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/11_porsche_taycan_rwd_doorhandle.jpg?itok=6qeHc7Or" alt="Taycan Door Handles" class="img-fluid rounded shadow-sm">
+                                    <p class="mt-2"> Flush Door Handles</p>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <img src="https://configurator.porsche.com/model/2025/Y1AAI1/common/detail_M3FP_m_0.jpg" alt="Taycan Roofline" class="img-fluid rounded shadow-sm">
+                                    <p class="mt-2">Low, Flowing Roofline</p>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <img src="https://content.assets.pressassociation.io/2020/06/10170415/5a978f17-bbec-4028-ac80-34ca810df892.jpg?w=1280" alt="Taycan Charging Port" class="img-fluid rounded shadow-sm">
+                                    <p class="mt-2">The Charging Port</p>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/porsche_taycan_rear_lights.jpg?itok=rRlVdD1u" alt="Taycan Rear View" class="img-fluid rounded shadow-sm">
+                                    <p class="mt-2">Full-Length LED Rear Light Strip and Glowing Logo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>The Interior Design</h3>
+                        <p>Inside, the Taycan sets a new benchmark for digital luxury. The cabin is minimalist yet warm, merging touch-responsive technology with traditional Porsche craftsmanship. Sustainable materials, driver-centric design, and advanced digital interfaces create a forward-thinking cockpit tailored for both excitement and comfort.</p>
+                        <ul>
+                            <li><span style="font-weight: bold;">Dashboard & Interface:</span> Triple-screen setup with a curved 16.8" digital gauge cluster, 10.9" center infotainment, and optional passenger display. Minimal physical buttons.</li>
+                            <li><span style="font-weight: bold;">Seating:</span> Standard 8-way adjustable comfort seats; higher trims offer 18-way adaptive sports seats with memory and massage. Option for Race-Tex microfiber in lieu of leather.</li>
+                            <li><span style="font-weight: bold;">Sustainability:</span> Interior features include recycled yarn carpets, olive-leaf tanned leather, and optional leather-free cabins—all part of Porsche’s sustainable ethos.</li>
+                            <li><span style="font-weight: bold;">Technology:</span> Apple CarPlay, Android Auto, voice control, ambient lighting, and optional Burmester® 3D High-End Surround Sound System.</li>
+                        </ul>
+                        <p style="font-style: italic;">Even the rear passengers benefit from generous legroom and dual climate zones, while the split trunk/frunk setup ensures practicality for everyday use.</p>
+
+                        <!-- Interior Images -->
+                        <div class="container mt-4">
+                            <div class="row text-center">
+
+                                <div class="col-md-4 mb-3">
+                                    <img src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/712/porsche_100712899.jpg" alt="Taycan Dashboard" class="img-fluid rounded shadow-sm">
+                                    <p class="mt-2">Minimalist, Driver-Focused Cockpit with 3 Screens</p>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <img src="https://configurator.porsche.com/model/2025/Y1AFP1/common/detail_MQ1K_m_0.jpg" alt="Taycan Seats" class="img-fluid rounded shadow-sm">
+                                    <p class="mt-2">Race-Tex or Leather with Personalizable Seats</p>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <img src="https://th.bing.com/th/id/R.45ae9d8350a55d3745c048a8adba2328?rik=%2fUPKdeoCqfauQg&pid=ImgRaw&r=0" alt="Rear" class="img-fluid rounded shadow-sm">
+                                </div>
+                            </div>
+                        </div>
+
+                    `;
+                }
+                document.getElementById("content-display").innerHTML = content;
+            }
+        </script>
+    </main>
+    <div class="pagination">
+        <a href="porsche_panamera.html" class="prev-btn">&laquo; Previous</a>
+
+        <div class="page-numbers">
+            <a href="porsche_718.html">1</a>
+            <a href="porsche_911.html">2</a>
+            <a href="porsche_cayenne.html">3</a>
+            <a href="porsche_macan.html">4</a>
+            <a href="porsche_panamera.html">5</a>
+            <a href="porsche_taycan.html" class="active">6</a> 
+        </div>
+    </div>
+    <footer>
+        <p>Follow Porsche on:</p>
+        <a href="https://www.facebook.com/porsche" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/porsche" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/porsche" target="_blank">Instagram</a>
+        <a href="https://www.pinterest.com/porsche" target="_blank">Pinterest</a>
+        <a href="https://www.youtube.com/porsche" target="_blank">Youtube</a>
+        <br>
+        <p>&copy; 2025 Porsche. All rights reserved. | <a href="#legal">Legal Services</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
